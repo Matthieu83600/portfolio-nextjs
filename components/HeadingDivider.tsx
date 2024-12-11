@@ -1,0 +1,12 @@
+const HeadingDivider = ({ title = '' }) => {
+  return (
+    <header className="flex items-center">
+      <h2 className="after:bg-inherited relative flex w-full items-center gap-4 bg-gradient-to-r from-gray-100 to-gray-50 bg-clip-text text-3xl font-extrabold uppercase text-slate-950 after:h-[1px] after:flex-1 dark:text-slate-50 md:text-4xl">
+        {title}{' '}
+        <hr className="w-[74%] rounded-md border-2 border-blue-700 dark:border-slate-50" />
+      </h2>
+    </header>
+  );
+};
+
+export default HeadingDivider;
