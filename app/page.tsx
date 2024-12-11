@@ -1,6 +1,7 @@
 import IntroSection from '@/components/IntroSection/Intro';
 import AboutSection from '@/components/AboutSection/About';
 import TechnologiesSection from '@/components/TechnoSection/Technologies';
+import ProjectsSection from '@/components/ProjectsSection/Projects';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <IntroSection />
       <AboutSection />
       <TechnologiesSection />
+      <ProjectsSection />
     </div>
   );
 }
