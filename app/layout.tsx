@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import { ThemeContext } from './providers';
 import Header from '@/components/HeaderSection/Header';
 import Footer from '@/components/FooterSection/Footer';
@@ -40,7 +41,10 @@ export default function RootLayout({
       <body className="mx-8 bg-slate-50 text-black antialiased dark:bg-black dark:text-white">
         <ThemeContext>
           <Header />
-          <main>{children}</main>
+          <main>
+            {children}
+            <Analytics />
+          </main>
           <Footer />
         </ThemeContext>
       </body>

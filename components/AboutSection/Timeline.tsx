@@ -44,7 +44,7 @@ const TimeLine = () => {
   return (
     <ul
       ref={carouselRef}
-      className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-blue-700 flex snap-x snap-mandatory gap-5 overflow-x-auto py-5"
+      className="flex snap-x snap-mandatory gap-5 overflow-x-auto py-5 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-blue-700"
     >
       {TimeLineData.map((item, index) => (
         <li

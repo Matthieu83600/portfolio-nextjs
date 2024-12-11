@@ -26,9 +26,7 @@ const AboutSection = () => {
         />
       </div>
       <div className="flex max-w-7xl flex-col gap-3 pb-16 pt-10">
-        <div
-          className="text-xl font-light leading-relaxed"
-        >
+        <div className="text-xl font-light leading-relaxed">
           <p>
             Je m'appelle Matthieu Bonjour. Je me suis reconverti
             professionnellement et j'ai obtenu ma certification professionnelle
