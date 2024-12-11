@@ -1,3 +1,9 @@
+import IntroSection from '@/components/IntroSection/Intro';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="container-md">
+      <IntroSection />
+    </div>
+  );
 }
