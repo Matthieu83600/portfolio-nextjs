@@ -236,6 +236,22 @@ export const PROJECTS: Project[] = [
     codeLink: 'https://github.com/Matthieu83600/Portfolio',
   },
   {
+    id: 'project12',
+    title: 'Watowatch',
+    category: 'React',
+    description:
+      "Ce projet consiste à retourner toutes les séries depuis l'API de TMDB. Chaque jour, une nouvelle suggestion de séries TV à regarder.",
+    tags: ['React', 'Axios', 'TMDB-API', 'React-bootstrap-icons'],
+    pictures: [
+      '/assets/projects/watowatch/mock0.webp',
+      '/assets/projects/watowatch/mock1.webp',
+      '/assets/projects/watowatch/mock2.webp',
+      '/assets/projects/watowatch/mock3.webp'
+    ],
+    codeLink: 'https://github.com/Matthieu83600/Portfolio',
+    demoLink: 'https://tv-show-adviser-two-mocha.vercel.app/',
+  },
+  {
     id: 'project15',
     title: 'Mon Portfolio 2.0',
     category: 'Next',
