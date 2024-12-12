@@ -10,3 +10,7 @@ export type Project = {
   demoLink?: string;
   codeLink: string;
 };
+
+export interface ProjectCardProps {
+  project: Project;
+}

@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project1',
     title: 'Riding Cities',
-    category: 'HTML',
+    category: 'OpenClassrooms',
     description:
       "Le projet 2 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir le langage HTML au travers du site Internet de Riding Cities. ",
     tags: ['HTML', 'CSS'],
@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project2',
     title: 'Booki',
-    category: 'HTML',
+    category: 'OpenClassrooms',
     description:
       "Le projet 3 du parcours Intégrateur Web d'OpenClassrooms nous permet d'intégrer l'interface du site de Booki en utilisant du code HTML et CSS.",
     tags: ['HTML', 'CSS', 'Responsive', 'Figma'],
@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project3',
     title: 'Ohmyfood',
-    category: 'HTML',
+    category: 'OpenClassrooms',
     description:
       "Le projet 4 du parcours Intégrateur Web d'OpenClassrooms consite à intégrer l'interface du site d'Ohmyfood en commençant par la version mobile.",
     tags: [
@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project4',
     title: 'Print It',
-    category: 'JavaScript',
+    category: 'OpenClassrooms',
     description:
       "Le projet 5 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir le langage JavaScript au travers du site de Print It.",
     tags: ['HTML', 'CSS', 'JavaScript', 'VSCode'],
@@ -84,7 +84,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project5',
     title: 'Portfolio - Sophie Bluel',
-    category: 'JavaScript',
+    category: 'OpenClassrooms',
     description:
       "Le projet 6 du parcours Intégrateur Web d'OpenClassrooms nous emmène sur la conception du site portfolio d'une architecte en utilisant JavaScript et en communiquant avec une API.",
     tags: ['HTML', 'CSS', 'JavaScript', 'Figma', 'API', 'Swagger'],
@@ -99,7 +99,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project6',
     title: 'Menu Maker',
-    category: 'Gestion de projet',
+    category: 'OpenClassrooms',
     description:
       "Le projet 7 du parcours Intégrateur Web d'OpenClassrooms est différent des autres projets réalisés, il s'agit de planifier le développement du prochain site de notre client Qwenta.",
     tags: ['Gestion de projet', 'Kanban', 'Méthode agile', 'Veille technique'],
@@ -117,7 +117,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project7',
     title: 'Kasa',
-    category: 'React',
+    category: 'OpenClassrooms',
     description:
       "Le projet 8 du parcours Intégrateur Web d'OpenClassrooms consiste à développer la nouvelle plateforme web de Kasa en utilisant React.",
     tags: ['React', 'React-Router', 'Sass', 'Responsive', 'Figma', 'JSON'],
@@ -137,7 +137,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project8',
     title: 'Nina Carducci',
-    category: 'SEO',
+    category: 'OpenClassrooms',
     description:
       "Le projet 9 du parcours Intégrateur Web d'OpenClassrooms consiste à améliorer les performances et le référencement naturel du site d'un client.",
     tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'SEO'],
@@ -157,7 +157,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project9',
     title: '724 events',
-    category: 'Debug',
+    category: 'OpenClassrooms',
     description:
       "Le projet 10 du parcours Intégrateur Web consiste à débugger le site d'une agence d'événementiel appelée 724events.",
     tags: [
@@ -179,7 +179,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project10',
     title: 'Argent Bank',
-    category: 'React',
+    category: 'OpenClassrooms',
     description:
       "Le projet 11 du parcours Intégrateur Web d'OpenClassrooms consiste à implémenter le front-end d'une application bancaire : Argent Bank en utilisant React.",
     tags: [
@@ -209,7 +209,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project11',
     title: 'Mon Portfolio',
-    category: 'React',
+    category: 'OpenClassrooms',
     description:
       "Le projet 12 et dernier projet du parcours Intégrateur Web d'OpenClassrooms consiste à créer et mettre en ligne son site portfolio.",
     tags: [
@@ -246,7 +246,7 @@ export const PROJECTS: Project[] = [
       '/assets/projects/watowatch/mock0.webp',
       '/assets/projects/watowatch/mock1.webp',
       '/assets/projects/watowatch/mock2.webp',
-      '/assets/projects/watowatch/mock3.webp'
+      '/assets/projects/watowatch/mock3.webp',
     ],
     codeLink: 'https://github.com/Matthieu83600/Portfolio',
     demoLink: 'https://tv-show-adviser-two-mocha.vercel.app/',
@@ -276,7 +276,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'project16',
     title: 'Eternal Twin - DinoRPG',
-    category: 'Vue',
+    category: 'OpenSource',
     description:
       "J'ai rejoint un projet communautaire open source pour continuer à développer mes compétences, apprendre à travailler en équipe, et découvrir de nouveaux langages. J'essaye de contribuer autant sur la partie front que la partie back du projet.",
     tags: ['Vue', 'TypeScript', 'Nodejs', 'Express', 'API', 'Postgresql'],
