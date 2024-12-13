@@ -6,13 +6,14 @@ export const PROJECTS: Project[] = [
     title: 'Riding Cities',
     category: 'OpenClassrooms',
     description:
-      "Le projet 2 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir le langage HTML au travers du site Internet de Riding Cities. ",
+      "Le projet 2 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir les fondamentaux du langage HTML au travers du site Internet de Riding Cities. Riding Cities est une association fictive de skateboard.",
+    competences: [
+      'Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML',
+    ],
     tags: ['HTML', 'CSS'],
     pictures: [
       '/assets/projects/riding-cities/mock0.webp',
       '/assets/projects/riding-cities/mock1.webp',
-      '/assets/projects/riding-cities/mock2.webp',
-      '/assets/projects/riding-cities/mock3.webp',
     ],
     demoLink: 'https://matthieu83600.github.io/Riding-Cities/',
     codeLink: 'https://github.com/Matthieu83600/Riding-Cities',
@@ -23,16 +24,17 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 3 du parcours Intégrateur Web d'OpenClassrooms nous permet d'intégrer l'interface du site de Booki en utilisant du code HTML et CSS.",
+    competences: [
+      'Installer un environnement de développement front-end',
+      'Implémenter une interface responsive avec HTML et CSS',
+      'Intégrer du contenu conformément à une maquette avec HTML et CSS',
+    ],
     tags: ['HTML', 'CSS', 'Responsive', 'Figma'],
     pictures: [
       '/assets/projects/booki/mock0.webp',
       '/assets/projects/booki/mock1.webp',
       '/assets/projects/booki/mock2.webp',
       '/assets/projects/booki/mock3.webp',
-      '/assets/projects/booki/mock4.webp',
-      '/assets/projects/booki/mock5.webp',
-      '/assets/projects/booki/mock6.webp',
-      '/assets/projects/booki/mock7.webp',
     ],
     demoLink: 'https://matthieu83600.github.io/Booki/',
     codeLink: 'https://github.com/Matthieu83600/Booki',
@@ -43,6 +45,11 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 4 du parcours Intégrateur Web d'OpenClassrooms consite à intégrer l'interface du site d'Ohmyfood en commençant par la version mobile.",
+    competences: [
+      'Intégrer une maquette en mobile-first',
+      'Mettre en œuvre des animations CSS',
+      'Versionner son projet avec Git et Github',
+    ],
     tags: [
       'HTML',
       'Sass',
@@ -57,10 +64,6 @@ export const PROJECTS: Project[] = [
       '/assets/projects/ohmyfood/mock1.webp',
       '/assets/projects/ohmyfood/mock2.webp',
       '/assets/projects/ohmyfood/mock3.webp',
-      '/assets/projects/ohmyfood/mock4.webp',
-      '/assets/projects/ohmyfood/mock5.webp',
-      '/assets/projects/ohmyfood/mock6.webp',
-      '/assets/projects/ohmyfood/mock7.webp',
     ],
     demoLink: 'https://matthieu83600.github.io/OhMyFood/',
     codeLink: 'https://github.com/Matthieu83600/OhMyFood',
@@ -71,12 +74,11 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 5 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir le langage JavaScript au travers du site de Print It.",
+    competences: ['Programmer en utilisant les fondamentaux de JavaScript'],
     tags: ['HTML', 'CSS', 'JavaScript', 'VSCode'],
     pictures: [
       '/assets/projects/print-it/mock0.webp',
       '/assets/projects/print-it/mock1.webp',
-      '/assets/projects/print-it/mock2.webp',
-      '/assets/projects/print-it/mock3.webp',
     ],
     demoLink: 'https://matthieu83600.github.io/Print-It/',
     codeLink: 'https://github.com/Matthieu83600/Print-It',
@@ -87,12 +89,17 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 6 du parcours Intégrateur Web d'OpenClassrooms nous emmène sur la conception du site portfolio d'une architecte en utilisant JavaScript et en communiquant avec une API.",
+    infos:
+      'Si vous souhaitez voir le projet, veuillez suivre le readme pour lancer le backend / frontend du projet.',
+    competences: [
+      'Gérer les événements utilisateurs avec JavaScript',
+      'Manipuler les éléments du DOM avec JavaScript',
+      'Récupérer les données utilisateurs dans le JavaScript via des formulaires',
+    ],
     tags: ['HTML', 'CSS', 'JavaScript', 'Figma', 'API', 'Swagger'],
     pictures: [
       '/assets/projects/portfolio-sophie-bluel/mock0.webp',
       '/assets/projects/portfolio-sophie-bluel/mock1.webp',
-      '/assets/projects/portfolio-sophie-bluel/mock2.webp',
-      '/assets/projects/portfolio-sophie-bluel/mock3.webp',
     ],
     codeLink: 'https://github.com/Matthieu83600/Portfolio-Sophie-Bluel',
   },
@@ -102,7 +109,19 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 7 du parcours Intégrateur Web d'OpenClassrooms est différent des autres projets réalisés, il s'agit de planifier le développement du prochain site de notre client Qwenta.",
-    tags: ['Gestion de projet', 'Kanban', 'Méthode agile', 'Veille technique'],
+    competences: [
+      'Présenter la solution technique',
+      "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+      'Découper une fonctionnalités en tâches pour préparer le développement',
+      'Mettre en place une méthode de veille technologique',
+      'Suivre le déroulement du projet grâce à un outil de gestion de projet',
+    ],
+    tags: [
+      'Gestion de projet',
+      'Kanban',
+      'Méthode agile',
+      'Veille technologique',
+    ],
     pictures: [
       '/assets/projects/menu-maker/mock0.webp',
       '/assets/projects/menu-maker/mock1.webp',
@@ -120,16 +139,19 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 8 du parcours Intégrateur Web d'OpenClassrooms consiste à développer la nouvelle plateforme web de Kasa en utilisant React.",
+    competences: [
+      'Initialiser une application avec Create React App',
+      "Configurer la navigation entre les pages de l'application avec React Router",
+      "Développer des éléments de l'interface d'un site web grâce à des composants React",
+      'Mettre en œuvre des animations CSS',
+      'Développer une interface web avec Sass',
+    ],
     tags: ['React', 'React-Router', 'Sass', 'Responsive', 'Figma', 'JSON'],
     pictures: [
       '/assets/projects/kasa/mock0.webp',
       '/assets/projects/kasa/mock1.webp',
       '/assets/projects/kasa/mock2.webp',
       '/assets/projects/kasa/mock3.webp',
-      '/assets/projects/kasa/mock4.webp',
-      '/assets/projects/kasa/mock5.webp',
-      '/assets/projects/kasa/mock6.webp',
-      '/assets/projects/kasa/mock7.webp',
     ],
     demoLink: 'https://kasa-matthieubonjour.vercel.app/',
     codeLink: 'https://github.com/Matthieu83600/Kasa',
@@ -140,16 +162,13 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 9 du parcours Intégrateur Web d'OpenClassrooms consiste à améliorer les performances et le référencement naturel du site d'un client.",
-    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'SEO'],
+    competences: ["Optimiser la performance d'un site web"],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'SEO', 'LightHouse'],
     pictures: [
       '/assets/projects/nina-carducci/mock0.webp',
       '/assets/projects/nina-carducci/mock1.webp',
       '/assets/projects/nina-carducci/mock2.webp',
       '/assets/projects/nina-carducci/mock3.webp',
-      '/assets/projects/nina-carducci/mock4.webp',
-      '/assets/projects/nina-carducci/mock5.webp',
-      '/assets/projects/nina-carducci/mock6.webp',
-      '/assets/projects/nina-carducci/mock7.webp',
     ],
     demoLink: 'https://matthieu83600.github.io/Nina-Carducci/',
     codeLink: 'https://github.com/Matthieu83600/Nina-Carducci',
@@ -160,6 +179,10 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 10 du parcours Intégrateur Web consiste à débugger le site d'une agence d'événementiel appelée 724events.",
+    competences: [
+      'Débugger un site web grâce aux Chrome DevTools',
+      'Rédiger un cahier de recette pour tester un site',
+    ],
     tags: [
       'React',
       'Tests unitaires',
@@ -170,8 +193,6 @@ export const PROJECTS: Project[] = [
     pictures: [
       '/assets/projects/724events/mock0.webp',
       '/assets/projects/724events/mock1.webp',
-      '/assets/projects/724events/mock2.webp',
-      '/assets/projects/724events/mock3.webp',
     ],
     demoLink: 'https://724events-matthieubonjour.vercel.app/',
     codeLink: 'https://github.com/Matthieu83600/724events',
@@ -182,6 +203,13 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 11 du parcours Intégrateur Web d'OpenClassrooms consiste à implémenter le front-end d'une application bancaire : Argent Bank en utilisant React.",
+    infos:
+      'Si vous souhaitez voir le projet, veuillez suivre le readme pour lancer le backend / frontend du projet.',
+    competences: [
+      "Afficher les données du back end sur l'interface via des appels API",
+      'Configurer des routes API pour la communication client / serveur',
+      'Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front',
+    ],
     tags: [
       'React',
       'React-Router',
@@ -203,7 +231,6 @@ export const PROJECTS: Project[] = [
       '/assets/projects/argent-bank/mock8.webp',
       '/assets/projects/argent-bank/mock9.webp',
     ],
-    demoLink: 'https://matthieu83600-argent-bank-front-end.vercel.app/',
     codeLink: 'https://github.com/Matthieu83600/ArgentBank-FrontEnd',
   },
   {
@@ -212,6 +239,9 @@ export const PROJECTS: Project[] = [
     category: 'OpenClassrooms',
     description:
       "Le projet 12 et dernier projet du parcours Intégrateur Web d'OpenClassrooms consiste à créer et mettre en ligne son site portfolio.",
+    infos:
+      'Vous pouvez retrouver le code de mon ancien portfolio créé lors de ma formation, vous êtes actuellement sur mon nouveau portfolio codé avec Nextjs.',
+    competences: ['Déployer un site statique en ligne'],
     tags: [
       'React',
       'React-router',
@@ -240,7 +270,8 @@ export const PROJECTS: Project[] = [
     title: 'Watowatch',
     category: 'React',
     description:
-      "Ce projet consiste à retourner toutes les séries depuis l'API de TMDB. Chaque jour, une nouvelle suggestion de séries TV à regarder.",
+      "Ce projet consiste à retourner toutes les séries depuis l'API externe de TMDB. Chaque jour, une nouvelle suggestion de séries TV à regarder.",
+    infos: 'Ce site a été rédigé en anglais.',
     tags: ['React', 'Axios', 'TMDB-API', 'React-bootstrap-icons'],
     pictures: [
       '/assets/projects/watowatch/mock0.webp',
@@ -257,8 +288,7 @@ export const PROJECTS: Project[] = [
     category: 'Next',
     description:
       "Pour un meilleur référencement naturel, et une lecture plus facile des robots d'indexation, j'ai décidé de redévelopper mon portfolio avec Next.js. avec les conseils de mon évaluateur lors de mon dernier projet avec OpenClassrooms.",
-    mission:
-      'Elle consiste simplement à améliorer mon portfolio et à apprendre à utiliser le framework Next.js ainsi que, le framework Tailwind CSS.',
+    infos: 'Vous êtes actuellement en train de naviguer dessus 😊',
     competences: [
       'Concevoir un site avec Next.js',
       'Apprendre à utiliser Tailwind CSS',

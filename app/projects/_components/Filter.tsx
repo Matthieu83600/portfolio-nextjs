@@ -7,7 +7,7 @@ const Filter: React.FC<FilterProps> = ({
   onCategoryChange,
 }) => {
   return (
-    <div className="flex justify-center gap-4 py-5">
+    <div className="flex flex-wrap justify-center gap-4 py-5">
       {/* Bouton "Tous" pour réinitialiser le filtre */}
       <button
         onClick={() => onCategoryChange('')}
