@@ -1,6 +1,7 @@
 import {
   BsFillEnvelopeOpenFill,
   BsGithub,
+  BsGitlab,
   BsLinkedin,
   BsTwitterX,
 } from 'react-icons/bs';
@@ -18,6 +19,12 @@ export const SOCIAL_MEDIA: SocialMediaOption[] = [
     icon: BsTwitterX,
     title: 'Mon profil Twitter',
     url: 'https://twitter.com/BonjourMat83600?=V9bTy94aQMLvl_l96_nnZA&s=09',
+  },
+  {
+    id: 'gitlab',
+    icon: BsGitlab,
+    title: 'Mon profil GitLab',
+    url: 'https://gitlab.com/Matthieu83600',
   },
   {
     id: 'github',
