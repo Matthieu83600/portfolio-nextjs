@@ -283,6 +283,23 @@ export const PROJECTS: Project[] = [
     demoLink: 'https://tv-show-adviser-two-mocha.vercel.app/',
   },
   {
+    id: 'project14',
+    title: 'ISpent',
+    category: 'React',
+    description:
+      "Ce projet consiste à suivre vos dépenses. Simple et efficace, vous rentrez votre rentrée d'argent et vos dépenses. Utilise React-redux pour gérer le store et Redux-persist pour garder en mémoire vos données en localStorage.",
+    infos: 'Ce site a été rédigé en anglais.',
+    tags: ['React', 'React-Redux', 'Redux-persist'],
+    pictures: [
+      '/assets/projects/ispent/mock0.webp',
+      '/assets/projects/ispent/mock1.webp',
+      '/assets/projects/ispent/mock2.webp',
+      '/assets/projects/ispent/mock3.webp',
+    ],
+    codeLink: 'https://github.com/Matthieu83600/React-expense-tracker',
+    demoLink: 'https://react-expense-tracker-drab-rho.vercel.app/',
+  },
+  {
     id: 'project15',
     title: 'Mon Portfolio 2.0',
     category: 'Next',
