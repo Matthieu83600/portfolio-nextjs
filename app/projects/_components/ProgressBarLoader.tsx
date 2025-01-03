@@ -19,7 +19,7 @@ const ProgressBarLoader: React.FC = () => {
     <div className="flex h-screen flex-col items-center justify-center text-black dark:text-white">
       <div className="h-2 w-full overflow-hidden rounded-full bg-gray-300">
         <div
-          className="h-full bg-blue-500"
+          className="h-full bg-light-bg-btn dark:bg-dark-bg-btn"
           style={{ width: `${progress}%`, transition: 'width 0.3s' }}
         />
       </div>

@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div
       ref={cardRef}
       tabIndex={-1}
-      className="flex min-h-[400px] flex-col justify-between rounded-lg bg-gray-200 p-5 shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-700 dark:bg-slate-900"
+      className="flex min-h-[400px] flex-col justify-between rounded-lg bg-light-bg-card p-5 shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-700 dark:bg-dark-bg-card"
     >
       <div className="flex flex-grow flex-col">
         {/* Titre */}
@@ -73,7 +73,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.tags.map((tag, index) => (
             <span
               key={index}
-              className="bg-gray-300 px-2 text-sm leading-normal dark:bg-blue-700"
+              className="bg-light-bg-btn px-2 text-sm leading-normal dark:bg-dark-bg-btn"
             >
               {tag}
             </span>
@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <Link
               href={project.demoLink}
               target="_blank"
-              className="rounded-lg bg-gray-300 p-2 dark:bg-blue-700"
+              className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
               title="Voir le projet"
             >
               Voir le projet
@@ -95,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <Link
               href={project.codeLink}
               target="_blank"
-              className="rounded-lg bg-gray-300 p-2 dark:bg-blue-700"
+              className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
               title="Voir le code"
             >
               Voir le code

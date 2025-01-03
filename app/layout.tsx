@@ -39,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className="mx-8 bg-slate-50 text-black antialiased dark:bg-black dark:text-white">
+      <body className="mx-4 bg-light-bg text-light-text-primary antialiased dark:bg-dark-bg dark:text-dark-text-primary md:mx-8">
         <ThemeContext>
           <Header />
           <main>

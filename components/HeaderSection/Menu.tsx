@@ -29,7 +29,10 @@ const Menu = ({ onClick = () => {} }) => {
                 title={option.name}
                 className="after:transition-width relative flex gap-2 text-xl after:absolute after:-bottom-[3px] after:left-0 after:h-[2px] after:w-0 after:bg-current after:duration-300 after:ease-in-out hover:no-underline hover:after:w-full"
               >
-                <Icon size={24} className="text-blue-700 dark:text-slate-50" />
+                <Icon
+                  size={24}
+                  className="text-light-bg-btn dark:text-dark-bg-btn"
+                />
                 {option.name}
               </a>
             </li>

@@ -9,12 +9,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="section">
       <HeadingDivider title="À propos de moi" />
-      <div
-        className="mt-7 flex justify-center"
-        style={{
-          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-        }}
-      >
+      <div className="mt-7 flex justify-center">
         <Image
           unoptimized
           src={moi || './assets/moi.webp'}

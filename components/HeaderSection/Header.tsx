@@ -11,13 +11,13 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-10 bg-inherit pb-5 pt-5 shadow-sm">
       <div className="container-md">
-        <div className="flex items-center justify-between gap-3">
+        <nav className="mx-2 flex items-center justify-between gap-3">
           <Logo />
           {isMobile ? <MobileMenu /> : <Menu />}
           <div className="flex items-center gap-5">
             <ThemeSwitcher />
           </div>
-        </div>
+        </nav>
       </div>
     </header>
   );

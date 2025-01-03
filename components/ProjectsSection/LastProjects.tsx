@@ -12,7 +12,7 @@ const LastProjects = () => {
       {lastProjects.map((project: Project) => (
         <div
           key={project.id}
-          className="flex min-h-[400px] flex-grow flex-col rounded-lg bg-gray-100 p-6 shadow-lg dark:bg-slate-900"
+          className="flex min-h-[400px] flex-grow flex-col rounded-lg bg-light-bg-card p-6 shadow-lg dark:bg-dark-bg-card"
         >
           <div className="flex flex-grow flex-col">
             <h3 className="mt-4 text-2xl font-bold">{project.title}</h3>
@@ -22,7 +22,7 @@ const LastProjects = () => {
             {project.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-gray-300 px-2 text-sm leading-normal dark:bg-blue-700"
+                className="bg-light-bg-btn px-2 text-sm leading-normal dark:bg-dark-bg-btn"
               >
                 {tag}
               </span>
@@ -33,7 +33,7 @@ const LastProjects = () => {
               <Link
                 href={project.demoLink}
                 target="_blank"
-                className="rounded-lg bg-gray-300 p-2 dark:bg-blue-700"
+                className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
                 title="Aller voir le repository"
               >
                 Voir le projet
@@ -43,7 +43,7 @@ const LastProjects = () => {
               <Link
                 href={project.codeLink}
                 target="_blank"
-                className="rounded-lg bg-gray-300 p-2 dark:bg-blue-700"
+                className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
                 title="Consulter le site"
               >
                 Voir le code
