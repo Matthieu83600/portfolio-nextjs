@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Lato } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeContext } from './providers';
@@ -32,6 +33,8 @@ export const metadata: Metadata = {
   ],
 };
 
+const lato = Lato({ weight: '400', subsets: ['latin']})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className="mx-4 bg-light-bg text-light-text-primary antialiased dark:bg-dark-bg dark:text-dark-text-primary md:mx-8">
+      <body className={` ${lato.className} mx-4 bg-light-bg text-light-text-primary antialiased dark:bg-dark-bg dark:text-dark-text-primary md:mx-8`}>
         <ThemeContext>
           <Header />
           <main>

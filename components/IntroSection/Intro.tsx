@@ -1,6 +1,9 @@
 'use client';
 import Link from 'next/link';
+import { Kaushan_Script } from 'next/font/google';
 import { useScrollTo } from '../../hooks/useScrollTo';
+
+const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
 
 const IntroSection = () => {
   const { scrollToEl } = useScrollTo();
@@ -16,7 +19,7 @@ const IntroSection = () => {
               transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
             }}
           >
-            <p className="text-center leading-[145%]">
+            <p className={`${kaushan.className} text-center leading-[145%]`}>
               Salut, je suis{' '}
               <span className="rounded-lg bg-light-custom-gradient p-1 dark:bg-dark-custom-gradient">
                 Matthieu
