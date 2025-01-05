@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "Je m'appelle Matthieu Bonjour, et je suis développeur front-end junior. Bienvenue sur mon portfolio.",
   icons: {
-    icon: '/assets/logo.svg',
+    icon: '/assets/darklogo.svg',
   },
   creator: 'Matthieu Bonjour',
   authors: [{ name: 'Matthieu Bonjour', url: 'https://matthieubonjour.dev' }],
@@ -41,8 +41,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" suppressHydrationWarning>
-      <body className={` ${lato.className} mx-4 bg-light-bg text-light-text-primary antialiased dark:bg-dark-bg dark:text-dark-text-primary md:mx-8`}>
+    <html
+      lang="fr"
+      suppressHydrationWarning
+      className="overflow-x-hidden"
+    >
+      <body
+        className={`${lato.className} mx-8 bg-light-bg-custom-gradient dark:bg-dark-bg-custom-gradient text-light-text-primary antialiased dark:text-dark-text-primary`}
+      >
         <ThemeContext>
           <Header />
           <main>

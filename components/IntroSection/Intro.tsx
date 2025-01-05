@@ -10,7 +10,7 @@ const IntroSection = () => {
   const onClick = (e: never) => scrollToEl(e);
 
   return (
-    <section id="intro" className="section">
+    <section id="intro">
       <div className="flex flex-col items-center gap-4 py-5">
         <div className="py-5 md:py-10">
           <h1

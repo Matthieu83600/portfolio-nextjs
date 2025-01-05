@@ -9,7 +9,7 @@ import { PROJECTS } from '@/constants/projects';
 export default function Projects() {
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState('');
-  const categories = ['OpenClassrooms', 'React', 'Next', 'OpenSource'];
+  const categories = ['OpenClassrooms', 'HTML', 'JavaScript', 'React', 'Next', 'OpenSource'];
 
   useEffect(() => {
     const timer = setTimeout(() => {

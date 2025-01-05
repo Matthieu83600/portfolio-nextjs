@@ -283,7 +283,7 @@ export const PROJECTS: Project[] = [
     demoLink: 'https://tv-show-adviser-two-mocha.vercel.app/',
   },
   {
-    id: 'project14',
+    id: 'project13',
     title: 'ISpent',
     category: 'React',
     description:
@@ -300,7 +300,40 @@ export const PROJECTS: Project[] = [
     demoLink: 'https://react-expense-tracker-drab-rho.vercel.app/',
   },
   {
+    id: 'project14',
+    title: 'Florence',
+    category: 'HTML',
+    description:
+      "Création d'une landing page basique pour m'exercer sur le langage HTML et le CSS.",
+    tags: ['HTML', 'CSS'],
+    pictures: [],
+    codeLink: 'https://github.com/Matthieu83600/Florence',
+    demoLink: 'https://matthieu83600.github.io/Florence/',
+  },
+  {
     id: 'project15',
+    title: "Rand'images",
+    category: 'React',
+    description: 'Mini-projet consistant à créer des custom hooks.',
+    tags: ['React', 'Bootstrap', 'Axios', 'Custom hooks'],
+    pictures: [],
+    codeLink: 'https://github.com/Matthieu83600/React-rand-images',
+    demoLink: 'https://react-rand-images-six.vercel.app/',
+  },
+  {
+    id: 'project16',
+    title: 'Zest',
+    category: 'JavaScript',
+    description:
+      "Mini-projet créé lors d'un processus de recrutement d'une entreprise. Zest est un mini réseau social basé sur un style neumorphisme et responsive.",
+    infos: "Aucun back-end n'est utilisé pour ce projet.",
+    tags: ['HTML', 'CSS', 'JavaScript', 'Fontawesome'],
+    pictures: [],
+    codeLink: 'https://github.com/Matthieu83600/Zest',
+    demoLink: 'https://matthieu83600.github.io/Zest/',
+  },
+  {
+    id: 'project30',
     title: 'Mon Portfolio 2.0',
     category: 'Next',
     description:
@@ -321,7 +354,7 @@ export const PROJECTS: Project[] = [
     codeLink: 'https://github.com/Matthieu83600/portfolio-nextjs',
   },
   {
-    id: 'project16',
+    id: 'project31',
     title: 'Eternal Twin - DinoRPG',
     category: 'OpenSource',
     description:

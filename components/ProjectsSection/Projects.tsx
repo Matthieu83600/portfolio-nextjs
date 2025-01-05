@@ -7,7 +7,6 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="section my-12">
       <HeadingDivider title="Derniers projets" />
-      <div className="h-10 md:h-14" />
 
       <div className="flex flex-col items-center gap-8 md:gap-14">
         <LastProjects />

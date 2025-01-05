@@ -12,6 +12,10 @@ export default {
       backgroundImage: {
         'light-custom-gradient': 'linear-gradient(90deg, #7D72F7, #A99EFF)',
         'dark-custom-gradient': 'linear-gradient(90deg, #473FCB, #3B35A0)',
+        'light-bg-custom-gradient':
+          'linear-gradient(to bottom, #FFF, #ece9fa, #97f0ff)',
+        'dark-bg-custom-gradient':
+          'linear-gradient(to top, #000, #161630, #161629)',
       },
       colors: {
         'dark-bg': '#161629',

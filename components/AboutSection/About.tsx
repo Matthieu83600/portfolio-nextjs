@@ -2,28 +2,24 @@
 'use client';
 import Image from 'next/image';
 import moi from '../../public/assets/moi.webp';
-import HeadingDivider from '../HeadingDivider';
-import TimeLine from './Timeline';
+import { Kaushan_Script } from "next/font/google";
+
+const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section">
-      <HeadingDivider title="À propos de moi" />
-      <div className="mt-7 flex justify-center">
-        <Image
-          unoptimized
-          src={moi || './assets/moi.webp'}
-          width={300}
-          height={0}
-          style={{ width: '320px', height: 'auto' }}
-          alt="ma photo"
-          className="rounded-3xl"
-        />
-      </div>
-      <div className="flex max-w-7xl flex-col gap-3 pb-16 pt-10">
-        <div className="text-xl font-light leading-relaxed">
+    <section
+      id="about"
+      className="grid grid-cols-2 md:grid-rows-6 lg:grid-cols-12"
+    >
+      <div className="col-span-2 !col-start-1 row-span-6 row-start-1 md:col-span-9">
+        <h2 className={`${kaushan.className} hidden md:block mb-9 after:bg-inherited items-center gap-4 bg-gradient-to-r from-gray-100 to-gray-50 bg-clip-text text-3xl font-extrabold uppercase text-slate-950 after:h-[1px] dark:text-slate-50 md:text-4xl`}>
+          À propos de moi
+        </h2>
+        <div className="relative z-20 mt-9 hidden rounded-2xl border border-slate-100 bg-white/50 p-8 drop-shadow-lg backdrop-blur-lg dark:bg-dark-bg/50 md:block">
+          <h3 className="mb-9 font-semibold">Qui est Matthieu ?</h3>
           <p>
-            Je m'appelle Matthieu Bonjour. Je me suis reconverti
+            Salut ! Je m'appelle Matthieu Bonjour. Je me suis reconverti
             professionnellement et j'ai obtenu ma certification professionnelle
             de niveau Bac +2 avec OpenClassrooms.
           </p>
@@ -46,7 +42,19 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <TimeLine />
+      <div className="col-span-2 col-start-1 row-span-5 row-start-1 md:col-span-4 md:col-start-9">
+        <div className="relative mx-auto h-[320px] w-[320px] rounded-2xl drop-shadow-lg xl:h-[350px] xl:w-[350px] 2xl:h-[400px] 2xl:w-[400px]">
+          <Image
+            unoptimized
+            src={moi || './assets/moi.webp'}
+            width={320}
+            height={0}
+            style={{ width: '90%', height: 'auto' }}
+            alt="ma photo"
+            className="rounded-2xl z-10"
+          />
+        </div>
+      </div>
     </section>
   );
 };
