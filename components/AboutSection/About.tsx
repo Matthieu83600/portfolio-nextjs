@@ -16,7 +16,7 @@ const AboutSection = () => {
         <h2 className={`${kaushan.className} hidden md:block mb-9 after:bg-inherited items-center gap-4 bg-gradient-to-r from-gray-100 to-gray-50 bg-clip-text text-3xl font-extrabold uppercase text-slate-950 after:h-[1px] dark:text-slate-50 md:text-4xl`}>
           À propos de moi
         </h2>
-        <div className="relative z-20 mt-9 hidden rounded-2xl border border-slate-100 bg-white/50 p-8 drop-shadow-lg backdrop-blur-lg dark:bg-dark-bg/50 md:block">
+        <div className="relative z-20 mt-9 hidden rounded-2xl border border-slate-100 bg-light-bg-card/50 p-8 drop-shadow-lg backdrop-blur-lg dark:bg-dark-bg-card/50 md:block">
           <h3 className="mb-9 font-semibold">Qui est Matthieu ?</h3>
           <p>
             Salut ! Je m'appelle Matthieu Bonjour. Je me suis reconverti

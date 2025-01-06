@@ -11,16 +11,11 @@ const TechnologiesSection = () => {
 
       {!!TECHNOLOGIES.length && (
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4">
-          {TECHNOLOGIES.map((tech, index) => {
+          {TECHNOLOGIES.map((tech) => {
             return (
               <div
                 key={tech.category}
                 className="flex flex-1 flex-col gap-4 md:flex-auto"
-                style={{
-                  transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${
-                    index === 0 ? 0 : 0.5 * index
-                  }s`,
-                }}
               >
                 <h3 className="text-2xl font-bold">{tech.category}</h3>
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-8">

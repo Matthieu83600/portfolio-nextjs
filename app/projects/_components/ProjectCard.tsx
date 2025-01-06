@@ -73,7 +73,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.tags.map((tag, index) => (
             <span
               key={index}
-              className="bg-light-bg-btn px-2 text-sm leading-normal dark:bg-dark-bg-btn"
+              className="rounded-2xl border border-black bg-light-bg-btn px-2 text-sm leading-normal dark:border-white dark:bg-dark-bg-btn"
             >
               {tag}
             </span>
@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <Link
               href={project.demoLink}
               target="_blank"
-              className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+              className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
               title="Voir le projet"
             >
               Voir le projet
@@ -95,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <Link
               href={project.codeLink}
               target="_blank"
-              className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+              className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
               title="Voir le code"
             >
               Voir le code

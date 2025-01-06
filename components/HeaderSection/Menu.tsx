@@ -26,7 +26,7 @@ const Menu = ({ onClick = () => {} }) => {
                 onClick={handleOnClick}
                 href={option.url}
                 title={option.name}
-                className="after:transition-width relative flex gap-2 text-xl after:absolute after:-bottom-[3px] after:left-0 after:h-[2px] after:w-0 after:bg-current after:duration-300 after:ease-in-out hover:no-underline hover:after:w-full"
+                className="after:transition-width relative flex gap-2 md:text-lg lg:text-2xl after:absolute after:-bottom-[3px] after:left-0 after:h-[2px] after:w-0 after:bg-current after:duration-300 after:ease-in-out hover:no-underline hover:after:w-full"
               >
                 {option.name}
               </a>

@@ -11,7 +11,7 @@ const Filter: React.FC<FilterProps> = ({
       {/* Bouton "Tous" pour réinitialiser le filtre */}
       <button
         onClick={() => onCategoryChange('')}
-        className={`rounded-lg px-4 py-2 text-white ${activeCategory === '' ? 'bg-light-custom-gradient dark:bg-dark-custom-gradient' : 'bg-slate-500'} hover:bg-light-bg-btn-hover`}
+        className={`rounded-lg px-4 py-2 text-black ${activeCategory === '' ? 'bg-light-custom-gradient dark:bg-dark-custom-gradient' : 'bg-slate-100'} hover:bg-light-bg-btn-hover`}
       >
         Tous
       </button>
@@ -21,10 +21,10 @@ const Filter: React.FC<FilterProps> = ({
         <button
           key={category}
           onClick={() => onCategoryChange(category)}
-          className={`rounded-lg px-4 py-2 text-white ${
+          className={`rounded-lg px-4 py-2 text-black ${
             activeCategory === category
               ? 'bg-light-custom-gradient dark:bg-dark-custom-gradient'
-              : 'bg-gray-500'
+              : 'bg-slate-100'
           } hover:bg-light-bg-btn-hover`}
         >
           {category}

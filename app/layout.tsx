@@ -47,7 +47,7 @@ export default function RootLayout({
       className="overflow-x-hidden"
     >
       <body
-        className={`${lato.className} mx-8 bg-light-bg-custom-gradient dark:bg-dark-bg-custom-gradient text-light-text-primary antialiased dark:text-dark-text-primary`}
+        className={`${lato.className} mx-4 md:mx-8 bg-light-bg-custom-gradient dark:bg-dark-bg-custom-gradient text-light-text-primary antialiased dark:text-dark-text-primary`}
       >
         <ThemeContext>
           <Header />

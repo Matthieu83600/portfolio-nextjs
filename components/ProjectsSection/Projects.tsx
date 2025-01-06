@@ -14,7 +14,7 @@ const ProjectsSection = () => {
           href={SITE_ROUTES.projects}
           tabIndex={-1}
           aria-label="Aller à la page des projets"
-          className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+          className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover border border-black dark:border-white"
         >
           <button aria-label="Voir plus de projets">Plus de projets</button>
         </Link>
