@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
 };
 
-const lato = Lato({ weight: '400', subsets: ['latin']})
+const lato = Lato({ weight: '400', subsets: ['latin'] });
 
 export default function RootLayout({
   children,
@@ -41,13 +41,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="fr"
-      suppressHydrationWarning
-      className="overflow-x-hidden"
-    >
+    <html lang="fr" suppressHydrationWarning className="overflow-x-hidden">
       <body
-        className={`${lato.className} mx-4 md:mx-8 bg-light-bg-custom-gradient dark:bg-dark-bg-custom-gradient text-light-text-primary antialiased dark:text-dark-text-primary`}
+        className={`${lato.className} mx-4 bg-light-bg-custom-gradient text-light-text-primary antialiased dark:bg-dark-bg-custom-gradient dark:text-dark-text-primary md:mx-8`}
       >
         <ThemeContext>
           <Header />

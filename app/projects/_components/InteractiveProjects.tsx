@@ -40,7 +40,11 @@ const InteractiveProjects = () => {
       ) : (
         <div className="container-md">
           <div className="flex flex-col items-center gap-4 py-5">
-              <h2 className={`${kaushan.className} text-center text-5xl font-bold`}>Mes projets</h2>
+            <h1
+              className={`${kaushan.className} text-center text-5xl font-bold`}
+            >
+              Mes projets
+            </h1>
           </div>
           <Filter
             activeCategory={activeCategory}
@@ -56,6 +60,6 @@ const InteractiveProjects = () => {
       )}
     </div>
   );
-}
+};
 
 export default InteractiveProjects;

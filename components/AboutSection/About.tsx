@@ -2,7 +2,7 @@
 'use client';
 import Image from 'next/image';
 import moi from '../../public/assets/moi.webp';
-import { Kaushan_Script } from "next/font/google";
+import { Kaushan_Script } from 'next/font/google';
 
 const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
 
@@ -13,7 +13,9 @@ const AboutSection = () => {
       className="grid grid-cols-2 md:grid-rows-6 lg:grid-cols-12"
     >
       <div className="col-span-2 !col-start-1 row-span-6 row-start-1 md:col-span-9">
-        <h2 className={`${kaushan.className} hidden md:block mb-9 after:bg-inherited items-center gap-4 bg-gradient-to-r from-gray-100 to-gray-50 bg-clip-text text-3xl font-extrabold uppercase text-slate-950 after:h-[1px] dark:text-slate-50 md:text-4xl`}>
+        <h2
+          className={`${kaushan.className} after:bg-inherited mb-9 hidden items-center gap-4 bg-gradient-to-r from-gray-100 to-gray-50 bg-clip-text text-3xl font-extrabold uppercase text-slate-950 after:h-[1px] dark:text-slate-50 md:block md:text-4xl`}
+        >
           À propos de moi
         </h2>
         <div className="relative z-20 mt-9 hidden rounded-2xl border border-slate-100 bg-light-bg-card/50 p-8 drop-shadow-lg backdrop-blur-lg dark:bg-dark-bg-card/50 md:block">
@@ -51,7 +53,7 @@ const AboutSection = () => {
             height={0}
             style={{ width: '90%', height: 'auto' }}
             alt="ma photo"
-            className="rounded-2xl z-10"
+            className="z-10 rounded-2xl"
           />
         </div>
       </div>

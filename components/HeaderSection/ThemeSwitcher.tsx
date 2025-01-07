@@ -18,7 +18,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={() => setTheme(currentTheme === 'dark' ? 'light' : 'dark')}
-      aria-label='Changer de thème'
+      aria-label="Changer de thème"
     >
       {currentTheme === 'dark' ? (
         <BsSun size={24} fill="yellow" />

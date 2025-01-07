@@ -22,7 +22,7 @@ const LastProjects = () => {
             {project.tags.map((tag, index) => (
               <span
                 key={index}
-                className="border border-black bg-light-bg-btn px-2 text-sm leading-normal dark:border-white dark:bg-dark-bg-btn rounded-2xl"
+                className="rounded-2xl border border-black bg-light-bg-btn px-2 text-sm leading-normal dark:border-white dark:bg-dark-bg-btn"
               >
                 {tag}
               </span>

@@ -39,7 +39,11 @@ const Logo = () => {
           </h1>
         </>
       ) : (
-        <Link href={SITE_ROUTES.home} aria-label="Aller à la page d'accueil" role="link">
+        <Link
+          href={SITE_ROUTES.home}
+          aria-label="Aller à la page d'accueil"
+          role="link"
+        >
           <Image
             src={theme === 'dark' ? '/assets/darklogo.svg' : '/assets/logo.svg'}
             width={0}

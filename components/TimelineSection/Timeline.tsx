@@ -43,7 +43,7 @@ const TimeLine = () => {
   }, []);
 
   return (
-    <section id='timeline' className='mt-5 -mb-5'>
+    <section id="timeline" className="-mb-5 mt-5">
       <ul
         ref={carouselRef}
         className="flex snap-x snap-mandatory gap-5 overflow-x-auto py-5 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-light-bg-btn dark:scrollbar-thumb-dark-bg-btn"

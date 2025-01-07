@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ThemeContextProps } from '@/types/themeContextProps.types';
 
 export const metadata: Metadata = {
-  title: 'Projets'
+  title: 'Projets',
 };
 
 const Layout = ({ children }: ThemeContextProps) => {

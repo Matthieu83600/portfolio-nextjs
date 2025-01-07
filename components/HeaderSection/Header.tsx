@@ -9,7 +9,7 @@ const Header = () => {
   const isMobile = useMediaQuery();
 
   return (
-    <header className="sticky top-3 z-10 bg-inherit py-5 shadow-2xl rounded-xl px-5">
+    <header className="sticky top-3 z-10 rounded-xl bg-inherit px-5 py-5 shadow-2xl">
       <div className="container-md flex justify-between">
         <Logo />
         <nav className="flex items-center gap-5">
