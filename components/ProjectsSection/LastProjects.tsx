@@ -8,11 +8,11 @@ const LastProjects = () => {
   const lastProjects = PROJECTS.slice(-3);
 
   return (
-    <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
       {lastProjects.map((project: Project) => (
         <div
           key={project.id}
-          className="flex min-h-[400px] flex-grow flex-col rounded-lg bg-light-bg-card p-6 shadow-lg dark:bg-dark-bg-card"
+          className="flex min-h-[400px] flex-grow flex-col rounded-2xl border border-slate-100 bg-light-bg-card/50 p-6 shadow-lg drop-shadow-lg backdrop-blur-lg dark:bg-dark-bg-card/50"
         >
           <div className="flex flex-grow flex-col">
             <h3 className="mt-4 text-2xl font-bold">{project.title}</h3>
@@ -22,7 +22,7 @@ const LastProjects = () => {
             {project.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-light-bg-btn px-2 text-sm leading-normal dark:bg-dark-bg-btn"
+                className="rounded-2xl border border-black bg-light-bg-btn px-2 text-sm leading-normal dark:border-white dark:bg-dark-bg-btn"
               >
                 {tag}
               </span>
@@ -33,7 +33,7 @@ const LastProjects = () => {
               <Link
                 href={project.demoLink}
                 target="_blank"
-                className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+                className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
                 title="Aller voir le repository"
               >
                 Voir le projet
@@ -43,7 +43,7 @@ const LastProjects = () => {
               <Link
                 href={project.codeLink}
                 target="_blank"
-                className="rounded-lg bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+                className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
                 title="Consulter le site"
               >
                 Voir le code

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "Je m'appelle Matthieu Bonjour, et je suis développeur front-end junior. Bienvenue sur mon portfolio.",
   icons: {
-    icon: '/assets/logo.svg',
+    icon: '/assets/darklogo.svg',
   },
   creator: 'Matthieu Bonjour',
   authors: [{ name: 'Matthieu Bonjour', url: 'https://matthieubonjour.dev' }],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
 };
 
-const lato = Lato({ weight: '400', subsets: ['latin']})
+const lato = Lato({ weight: '400', subsets: ['latin'] });
 
 export default function RootLayout({
   children,
@@ -42,7 +42,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={` ${lato.className} mx-4 bg-light-bg text-light-text-primary antialiased dark:bg-dark-bg dark:text-dark-text-primary md:mx-8`}>
+      <body
+        className={`${lato.className} !overflow-x-hidden mx-4 sm:mx-8 bg-light-bg-custom-gradient text-light-text-primary antialiased dark:bg-dark-bg-custom-gradient dark:text-dark-text-primary md:mx-10`}
+      >
         <ThemeContext>
           <Header />
           <main>

@@ -16,7 +16,7 @@ const SocialMedia = () => {
               {/* Rendu de l'icône avec les props 'size' et 'className' */}
               <item.icon
                 size={24}
-                className="text-light-bg-btn dark:text-dark-bg-btn"
+                className="text-light-text-primary dark:text-dark-text-primary"
               />
             </a>
           </li>

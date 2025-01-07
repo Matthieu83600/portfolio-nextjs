@@ -1,3 +1,4 @@
+'use client';
 import { useRef, useEffect } from 'react';
 
 const TimeLineData = [
@@ -42,27 +43,29 @@ const TimeLine = () => {
   }, []);
 
   return (
-    <ul
-      ref={carouselRef}
-      className="flex snap-x snap-mandatory gap-5 overflow-x-auto py-5 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-light-bg-btn dark:scrollbar-thumb-dark-bg-btn"
-    >
-      {TimeLineData.map((item, index) => (
-        <li
-          id={`carousel__item-${index}`}
-          key={index}
-          className="flex min-w-[250px] snap-start flex-col gap-3 hover:cursor-default sm:w-1/3 md:w-1/6"
-        >
-          <h3
-            aria-label={"Ce que j'ai fait en " + item.year}
-            className="flex items-center gap-4 text-2xl font-bold"
+    <section id="timeline" className="-mb-5 mt-5">
+      <ul
+        ref={carouselRef}
+        className="flex snap-x snap-mandatory gap-5 overflow-x-auto py-5 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-light-bg-btn dark:scrollbar-thumb-dark-bg-btn"
+      >
+        {TimeLineData.map((item, index) => (
+          <li
+            id={`carousel__item-${index}`}
+            key={index}
+            className="flex min-w-[250px] snap-start flex-col gap-3 hover:cursor-default sm:w-1/3 md:w-1/6"
           >
-            {`${item.year}`}
-            <hr className="w-[58%] border-2 border-light-bg-btn dark:border-dark-bg-btn" />
-          </h3>
-          <p className="tracking-wide">{item.text}</p>
-        </li>
-      ))}
-    </ul>
+            <h3
+              aria-label={"Ce que j'ai fait en " + item.year}
+              className="flex items-center gap-4 text-2xl font-bold"
+            >
+              {`${item.year}`}
+              <hr className="w-[58%] border-2 border-light-bg-btn dark:border-dark-bg-btn" />
+            </h3>
+            <p className="tracking-wide">{item.text}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 

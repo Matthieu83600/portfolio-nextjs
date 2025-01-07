@@ -10,8 +10,12 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'light-custom-gradient': 'linear-gradient(90deg, #7D72F7, #A99EFF)',
+        'light-custom-gradient': 'linear-gradient(90deg, #ece9fa, #97f0ff)',
         'dark-custom-gradient': 'linear-gradient(90deg, #473FCB, #3B35A0)',
+        'light-bg-custom-gradient':
+          'linear-gradient(to bottom, #FFF, #ece9fa, #97f0ff)',
+        'dark-bg-custom-gradient':
+          'linear-gradient(to top, #000, #161630, #161629)',
       },
       colors: {
         'dark-bg': '#161629',
@@ -20,8 +24,8 @@ export default {
         'light-text-secondary': '#121778',
         'dark-text-primary': '#EFECFA',
         'dark-text-secondary': '#C9C2F8',
-        'light-bg-btn': '#7D72F7',
-        'light-bg-btn-hover': '#A99EFF',
+        'light-bg-btn': '#8febfc',
+        'light-bg-btn-hover': '#97f0ff',
         'dark-bg-btn': '#473FCB',
         'dark-bg-btn-hover': '#3B35A0',
         'light-bg-card': '#ece9fa',
