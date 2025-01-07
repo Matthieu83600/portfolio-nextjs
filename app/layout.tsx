@@ -41,9 +41,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" suppressHydrationWarning className="overflow-x-hidden">
+    <html lang="fr" suppressHydrationWarning>
       <body
-        className={`${lato.className} mx-4 bg-light-bg-custom-gradient text-light-text-primary antialiased dark:bg-dark-bg-custom-gradient dark:text-dark-text-primary md:mx-8`}
+        className={`${lato.className} !overflow-x-hidden mx-4 sm:mx-8 bg-light-bg-custom-gradient text-light-text-primary antialiased dark:bg-dark-bg-custom-gradient dark:text-dark-text-primary md:mx-10`}
       >
         <ThemeContext>
           <Header />
