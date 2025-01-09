@@ -1,11 +1,13 @@
-import type { Metadata } from 'next';
-import { Lato } from 'next/font/google';
+import Footer from '@/components/FooterSection/Footer';
+import Header from '@/components/HeaderSection/Header';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { ThemeContext } from './providers';
-import Header from '@/components/HeaderSection/Header';
-import Footer from '@/components/FooterSection/Footer';
+import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { Lato } from 'next/font/google';
 import './globals.css';
+import { ThemeContext } from './providers';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://matthieubonjour.dev/'),
@@ -35,24 +37,30 @@ export const metadata: Metadata = {
 
 const lato = Lato({ weight: '400', subsets: ['latin'] });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  const { locale } = await params;
+  const messages = await getMessages();
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${lato.className} !overflow-x-hidden mx-4 sm:mx-8 bg-light-bg-custom-gradient text-light-text-primary antialiased dark:bg-dark-bg-custom-gradient dark:text-dark-text-primary md:mx-10`}
+        className={`${lato.className} mx-4 !overflow-x-hidden bg-light-bg-custom-gradient text-light-text-primary antialiased dark:bg-dark-bg-custom-gradient dark:text-dark-text-primary sm:mx-8 md:mx-10`}
       >
         <ThemeContext>
-          <Header />
-          <main>
-            {children}
-            <Analytics />
-            <SpeedInsights />
-          </main>
-          <Footer />
+          <NextIntlClientProvider messages={messages}>
+            <Header locale={locale} />
+            <main>
+              {children}
+              <Analytics />
+              <SpeedInsights />
+            </main>
+            <Footer locale={locale} />
+          </NextIntlClientProvider>
         </ThemeContext>
       </body>
     </html>

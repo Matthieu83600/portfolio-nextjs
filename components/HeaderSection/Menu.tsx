@@ -1,14 +1,14 @@
 'use client';
+import { useScrollTo } from '@/hooks/useScrollTo';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useScrollTo } from '../../hooks/useScrollTo';
 import { BsArrowReturnLeft } from 'react-icons/bs';
 import { MENU_OPTIONS } from '../../constants/menu';
-import { SITE_ROUTES } from '../../constants/routes';
 import { SITE_STRINGS } from '../../constants/strings';
 
-const Menu = ({ onClick = () => {} }) => {
+const Menu = ({ locale, onClick }: { locale: string; onClick: () => void }) => {
   const pathname = usePathname();
+
   const { scrollToEl } = useScrollTo();
 
   const handleOnClick = (e: never) => {
@@ -40,7 +40,7 @@ const Menu = ({ onClick = () => {} }) => {
   const backMenu = (
     <div>
       <Link
-        href={SITE_ROUTES.home}
+        href={`/${locale}`}
         title={SITE_STRINGS.backToMainPageTitle}
         className="flex items-center gap-5"
       >
@@ -52,7 +52,7 @@ const Menu = ({ onClick = () => {} }) => {
     </div>
   );
 
-  const content = pathname === SITE_ROUTES.home ? mainMenu : backMenu;
+  const content = pathname === `/${locale}` ? mainMenu : backMenu;
 
   if (MENU_OPTIONS.length === 0) {
     return null;

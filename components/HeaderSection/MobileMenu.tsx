@@ -1,11 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Menu from './Menu';
-import SocialMedia from './SocialMedia';
 import { BsGrid } from 'react-icons/bs';
 import { IoMdClose } from 'react-icons/io';
+import Menu from './Menu';
+import SocialMedia from './SocialMedia';
 
-const MobileMenu = () => {
+const MobileMenu = ({ locale }: { locale: string }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const onClose = () => setIsOpen(false);
@@ -36,7 +36,7 @@ const MobileMenu = () => {
               </button>
             </header>
             <div className="px-6 py-10">
-              <Menu onClick={onClose} />
+              <Menu locale={locale} onClick={onClose} />
             </div>
           </div>
         )}

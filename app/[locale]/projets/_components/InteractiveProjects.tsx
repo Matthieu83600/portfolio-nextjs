@@ -1,10 +1,10 @@
 'use client';
+import { PROJECTS } from '@/constants/projects';
 import { Kaushan_Script } from 'next/font/google';
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Filter from './Filter';
 import ProgressBarLoader from './ProgressBarLoader';
 import ProjectCard from './ProjectCard';
-import Filter from './Filter';
-import { PROJECTS } from '@/constants/projects';
 
 const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
 
@@ -34,7 +34,7 @@ const InteractiveProjects = () => {
     : PROJECTS;
 
   return (
-    <div className="container-md">
+    <>
       {loading ? (
         <ProgressBarLoader />
       ) : (
@@ -58,7 +58,7 @@ const InteractiveProjects = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

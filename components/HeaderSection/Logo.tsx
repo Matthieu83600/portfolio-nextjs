@@ -1,15 +1,14 @@
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Kaushan_Script } from 'next/font/google';
+import { Link } from '@/i18n/routing';
 import { useTheme } from 'next-themes';
+import { Kaushan_Script } from 'next/font/google';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
-import { SITE_ROUTES } from '../../constants/routes';
+import { useEffect, useState } from 'react';
 
 const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
 
-const Logo = () => {
+const Logo = ({ locale }: { locale: string }) => {
   const pathname = usePathname();
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -24,7 +23,7 @@ const Logo = () => {
 
   return (
     <div className="flex items-center gap-2 text-xl font-bold md:text-2xl">
-      {pathname === SITE_ROUTES.home ? (
+      {pathname === `/${locale}` ? (
         <>
           <Image
             src={theme === 'dark' ? '/assets/darklogo.svg' : '/assets/logo.svg'}
@@ -40,7 +39,7 @@ const Logo = () => {
         </>
       ) : (
         <Link
-          href={SITE_ROUTES.home}
+          href={`/${locale}`}
           aria-label="Aller à la page d'accueil"
           role="link"
         >

@@ -1,6 +1,6 @@
 'use client';
-import Link from 'next/link';
 import { Kaushan_Script } from 'next/font/google';
+import Link from 'next/link';
 import { useScrollTo } from '../../hooks/useScrollTo';
 
 const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });

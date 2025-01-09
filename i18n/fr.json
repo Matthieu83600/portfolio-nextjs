@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Accueil",
+    "ProjectSection": {
+      "title": "Derniers Projets"
+    }
+  },
+  "NotFoundPage": {
+    "errorTitle": "Page non trouvée",
+    "errorDescription": "Désolé, la page que vous cherchez n'existe pas.",
+    "errorImageAlt": "Erreur 404"
+  }
+}
