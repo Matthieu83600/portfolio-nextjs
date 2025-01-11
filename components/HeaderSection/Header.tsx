@@ -11,13 +11,13 @@ const Header = ({ locale }: { locale: string }) => {
     <header className="sticky top-3 z-10 rounded-xl bg-inherit px-5 py-5 shadow-2xl">
       <div className="container-md flex justify-between">
         <Logo locale={locale} />
-        <nav className="flex items-center gap-5">
+        <div className="flex items-center gap-5">
           {isMobile ? (
             <MobileMenu locale={locale} />
           ) : (
             <Menu locale={locale} onClick={() => {}} />
           )}
-        </nav>
+        </div>
       </div>
     </header>
   );

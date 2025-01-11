@@ -4,7 +4,7 @@ import { SOCIAL_MEDIA } from '../../constants/social_media';
 const SocialMedia = () => {
   const t = useTranslations('SocialMedia');
   return (
-    <nav role="menu">
+    <nav>
       <ul className="flex items-center gap-5">
         {SOCIAL_MEDIA.map((item) => (
           <li key={item.id}>

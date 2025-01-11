@@ -42,11 +42,7 @@ const Logo = ({ locale }: { locale: string }) => {
           </h1>
         </>
       ) : (
-        <Link
-          href={`/${locale}`}
-          aria-label="Aller à la page d'accueil"
-          role="link"
-        >
+        <Link href={`/`} aria-label="Aller à la page d'accueil" role="link">
           <Image
             src={
               theme === 'dark'

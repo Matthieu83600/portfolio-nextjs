@@ -17,7 +17,7 @@ const MobileMenu = ({ locale }: { locale: string }) => {
 
   return (
     <>
-      <button className="p-2" onClick={onOpen} title="Open menu">
+      <button className="p-2" onClick={onOpen} title="Ouvrir menu">
         <BsGrid size={24} />
       </button>
 

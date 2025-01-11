@@ -9,7 +9,7 @@
       },
       "backMenu": {
         "backToMainPageTitle": "Back to main page",
-        "backToMainText": "Back to main page"
+        "backToMainText": "Back to home page"
       }
     }
   },
@@ -21,19 +21,377 @@
     "mail": "Send me an email"
   },
   "HomePage": {
+    "IntroSection": {
+      "title": "Hi, I am Matthieu, a passionate front-end developer.",
+      "description": "I invite you to discover my portfolio.",
+      "linkProjects": "See my latest projects",
+      "linkCV": "View my resume"
+    },
+    "AboutSection": {
+      "title": "About me",
+      "subTitle": "Who is Matthieu?",
+      "description": "Hi! My name is Matthieu Bonjour. I have made a career change and obtained my professional certification equivalent to a 2-year degree with OpenClassrooms.",
+      "description2": "After spending a few years in retail, particularly at Cash Express and Darty where I sold, bought, and tested numerous multimedia products, TVs, and various other items, I decided to change my career path.",
+      "description3": "I am now officially a web developer.",
+      "description4": "I take great pleasure in learning new languages and integrating them.",
+      "description5": "I am motivated, passionate about what I do, and eager to learn more. Feel free to contact me if you are looking for someone with my profile. I would be delighted to meet your expectations and join a team.",
+      "altPhoto": "My portrait"
+    },
+    "TimelineSection": {
+      "2024": {
+        "text1": "Actively seeking a junior position as a web integrator developer.",
+        "text2": "Integration into the DinoRPG community project.",
+        "text3": "Order preparer / delivery person at Floral Concept."
+      },
+      "2023": {
+        "text1": "Web developer training with OpenClassrooms, obtaining my Bac +2 level certification."
+      },
+      "2023-2019": {
+        "text1": "Experienced multimedia TV salesperson at Darty."
+      },
+      "2019": {
+        "text1": "Sales advisor at Weldom."
+      },
+      "2018-2014": {
+        "text1": "Salesperson / Buyer at Cash Express."
+      },
+      "2014-2010": {
+        "text1": "Versatile employee at McDonald's."
+      }
+    },
+    "SkillsSection": {
+      "title": "Skills",
+      "text": "I work with the following technologies and tools:",
+      "category": {
+        "front": "Front-end",
+        "back": "Back-end",
+        "databases": "Databases",
+        "version": "Versioning",
+        "tools": "UI / UX tools",
+        "ide": "IDE",
+        "other": "Other tools"
+      }
+    },
     "ProjectSection": {
-      "title": "Last Projects"
+      "title": "Latest Projects",
+      "more": "More projects"
+    }
+  },
+  "ProjectsCard": {
+    "ProgressBarLoader": "Loading ongoing projects",
+    "title": "My projects",
+    "subtitle": "Information:",
+    "subtitle2": "Skills developed:",
+    "linkCode": "View source code",
+    "linkView": "View project website",
+    "Filter": {
+      "all": "All",
+      "OpenClassrooms": "OpenClassrooms",
+      "OpenSource": "OpenSource",
+      "otherProjects": "Other projects"
+    },
+    "project0": {
+      "title": "Riding Cities",
+      "description": "Project 2 of the OpenClassrooms Web Integrator course allows us to discover the fundamentals of HTML through the website of Riding Cities. Riding Cities is a fictional skateboarding association.",
+      "competences": {
+        "1": "Integrate elements on a web page using the fundamentals of HTML"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS"
+      }
+    },
+    "project1": {
+      "title": "Booki",
+      "description": "Project 3 of the OpenClassrooms Web Integrator course allows us to integrate the interface of the Booki website using HTML and CSS.",
+      "competences": {
+        "1": "Set up a front-end development environment",
+        "2": "Implement a responsive interface with HTML and CSS",
+        "3": "Integrate content according to a mockup using HTML and CSS"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "Responsive",
+        "4": "Figma"
+      }
+    },
+    "project2": {
+      "title": "Ohmyfood",
+      "description": "Project 4 of the OpenClassrooms Web Integrator course consists of integrating the interface of the Ohmyfood website, starting with the mobile version.",
+      "competences": {
+        "1": "Integrate a design using a mobile-first approach",
+        "2": "Implement CSS animations",
+        "3": "Version control the project with Git and GitHub"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "Sass",
+        "3": "Mobile view",
+        "4": "Responsive",
+        "5": "Figma",
+        "6": "Git & GitHub"
+      }
+    },
+    "project3": {
+      "title": "Print It",
+      "description": "Project 5 of the OpenClassrooms Web Integrator course allows us to discover the JavaScript language through the Print It website.",
+      "competences": {
+        "1": "Program using the fundamentals of JavaScript"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "JavaScript"
+      }
+    },
+    "project4": {
+      "title": "Portfolio - Sophie Bluel",
+      "description": "Project 6 of the OpenClassrooms Web Integrator course involves designing the portfolio website of an architect using JavaScript and communicating with an API.",
+      "infos": "If you wish to see the project, please follow the readme to launch the backend / frontend of the project.",
+      "competences": {
+        "1": "Manage user events with JavaScript",
+        "2": "Manipulate DOM elements with JavaScript",
+        "3": "Retrieve user data in JavaScript via forms"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "JavaScript",
+        "4": "Figma",
+        "5": "API",
+        "6": "Postman"
+      }
+    },
+    "project5": {
+      "title": "Menu Maker",
+      "description": "Project 7 of the OpenClassrooms Web Integrator course is different from the other projects; it involves planning the development of the next website for our client Qwenta.",
+      "competences": {
+        "1": "Present the technical solution",
+        "2": "Write the technical specifications for a web project based on functional requirements",
+        "3": "Break down features into tasks to prepare for development",
+        "4": "Implement a technological watch method",
+        "5": "Track the project's progress using a project management tool"
+      },
+      "tags": {
+        "1": "Project management",
+        "2": "Kanban",
+        "3": "Agile method",
+        "4": "Technological watch"
+      }
+    },
+    "project6": {
+      "title": "Kasa",
+      "description": "Project 8 of the OpenClassrooms Web Integrator course involves developing the new web platform for Kasa using React.",
+      "competences": {
+        "1": "Initialize an application with Create React App",
+        "2": "Configure navigation between the application's pages with React Router",
+        "3": "Develop interface elements of a website using React components",
+        "4": "Implement CSS animations",
+        "5": "Develop a web interface with Sass"
+      },
+      "tags": {
+        "1": "React",
+        "2": "React-Router",
+        "3": "Sass",
+        "4": "Responsive",
+        "5": "Figma",
+        "6": "JSON"
+      }
+    },
+    "project7": {
+      "title": "Nina Carducci",
+      "description": "Project 9 of the OpenClassrooms Web Integrator course involves improving the performance and SEO of a client's website.",
+      "competences": {
+        "1": "Optimize the performance of a website"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "JavaScript",
+        "4": "Responsive",
+        "5": "SEO",
+        "6": "LightHouse"
+      }
+    },
+    "project8": {
+      "title": "724 events",
+      "description": "Project 10 of the Web Integrator course involves debugging the website of an event agency called 724events.",
+      "competences": {
+        "1": "Debug a website using Chrome DevTools",
+        "2": "Write a test plan to test a website"
+      },
+      "tags": {
+        "1": "React",
+        "2": "Unit tests",
+        "3": "Integration tests",
+        "4": "Debug",
+        "5": "Chrome DevTools"
+      }
+    },
+    "project9": {
+      "title": "Argent Bank",
+      "description": "Project 11 of the OpenClassrooms Web Integrator course involves implementing the front-end of a banking application: Argent Bank using React.",
+      "infos": "If you wish to see the project, please follow the readme to launch the backend / frontend of the project.",
+      "competences": {
+        "1": "Display backend data on the interface via API calls",
+        "2": "Configure API routes for client/server communication",
+        "3": "Implement data management with Redux to ensure the frontend's functionality"
+      },
+      "tags": {
+        "1": "React",
+        "2": "React-Router",
+        "3": "Redux",
+        "4": "Sass",
+        "5": "Responsive",
+        "6": "API",
+        "7": "Postman",
+        "8": "Swagger"
+      }
+    },
+    "project10": {
+      "title": "Mon Portfolio",
+      "description": "Project 12, the final project of the OpenClassrooms Web Integrator course, involves creating and launching a personal portfolio website.",
+      "infos": "You can find the code of my old portfolio created during my training, you are currently on my new portfolio coded with Nextjs.",
+      "competences": {
+        "1": "Deploy a static website online"
+      },
+      "tags": {
+        "1": "React",
+        "2": "React-Router",
+        "3": "Sass",
+        "4": "Styled-components",
+        "5": "React-responsive-carousel",
+        "6": "Emailjs",
+        "7": "Prettier",
+        "8": "JSON",
+        "9": "Figma"
+      }
+    },
+    "project11": {
+      "title": "Watowatch",
+      "description": "This project involves fetching all TV series from the TMDB external API. Each day, a new TV series suggestion is provided.",
+      "infos": "This site was written in English.",
+      "competences": {
+        "1": "Display backend data on the interface via API calls",
+        "2": "Configure API routes for client/server communication"
+      },
+      "tags": {
+        "1": "React",
+        "2": "CSS",
+        "3": "Axios",
+        "4": "TMDB-API",
+        "5": "React-bootstrap-icons"
+      }
+    },
+    "project12": {
+      "title": "ISpent",
+      "description": "This project involves tracking your expenses. Simple and effective, you enter your income and expenses. It uses React-Redux to manage the store and Redux-Persist to keep your data in localStorage.",
+      "infos": "This site was written in English.",
+      "competences": {
+        "1": "Implement data management with Redux",
+        "2": "Persist data with Redux-persist"
+      },
+      "tags": {
+        "1": "React",
+        "2": "CSS",
+        "3": "React-Redux",
+        "4": "Redux-persist",
+        "5": "React-bootstrap-icons"
+      }
+    },
+    "project13": {
+      "title": "Florence",
+      "description": "Creation of a basic landing page to practice HTML and CSS.",
+      "tags": {
+        "1": "HTML",
+        "2": "CSS"
+      }
+    },
+    "project14": {
+      "title": "Rand'images",
+      "description": "Mini-project involving the creation of custom hooks.",
+      "tags": {
+        "1": "React",
+        "2": "Bootstrap",
+        "3": "Axios",
+        "4": "API",
+        "5": "Custom hooks"
+      }
+    },
+    "project15": {
+      "title": "Zest",
+      "description": "Mini-project created during a recruitment process for a company. Zest is a mini social network based on a neumorphism style and responsive design.",
+      "infos": "No back-end is used for this project.",
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "Neumorphism style",
+        "4": "JavaScript",
+        "5": "Responsive"
+      }
+    },
+    "project30": {
+      "title": "My Current Portfolio",
+      "description": "For better SEO and easier readability for indexing bots, I decided to redevelop my portfolio using Next.js, following advice from my evaluator during my last project with OpenClassrooms.",
+      "infos": "You are currently browsing it 😊",
+      "competences": {
+        "1": "Design a site with Next.js",
+        "2": "Learn to use Tailwind CSS",
+        "3": "Internationale my portfolio in French and English with next-intl"
+      },
+      "tags": {
+        "1": "Nextjs",
+        "2": "TypeScript",
+        "3": "Tailwind CSS",
+        "4": "Next-themes",
+        "5": "Next-intl",
+        "6": "React-icons"
+      }
+    },
+    "project31": {
+      "title": "Eternal Twin - DinoRPG",
+      "description": "I joined a community open-source project to continue developing my skills, learn to work in a team, and discover new languages. I try to contribute to both the front-end and back-end parts of the project.",
+      "tags": {
+        "1": "Vue",
+        "2": "TypeScript",
+        "3": "Sass",
+        "4": "i18n",
+        "5": "Nodejs",
+        "6": "Express",
+        "7": "API",
+        "8": "Prisma",
+        "9": "Postgresql"
+      }
+    }
+  },
+  "LegalNoticePage": {
+    "title": "Legal Notice",
+    "firstArticle": {
+      "title": "1 - Site Edition:",
+      "paragraph": "In accordance with the provisions of law no. 2004-575 of June 21, 2004, for confidence in the digital economy, it is specified to users of the website <websiteLink>http://matthieubonjour.dev</websiteLink>, the identity of the various stakeholders in the context of its implementation and monitoring.",
+      "paragraph2": "This site, accessible at the URL <websiteLink>http://matthieubonjour.dev</websiteLink>, is edited by: Matthieu Bonjour, residing at 43 impasse de l'ancienne gendarmerie 83600 LES ADRETS DE L'ESTEREL.",
+      "director": "Publication Director:",
+      "contact": "Contact:"
+    },
+    "secondArticle": {
+      "title": "2 - Hosting:",
+      "paragraph": "The site is hosted by Vercel Inc., located at 440 N Barranca Ave #4133 Covina, CA 91723, United States."
+    },
+    "thirdArticle": {
+      "title": "3 - CNIL, personal data management, cookies:",
+      "paragraph": "To date, the site does not collect any data from its users and does not cause the installation of any cookies on the user's computer."
     }
   },
   "NotFoundPage": {
-    "errorTitle": "Page non trouvée",
-    "errorDescription": "Désolé, la page que vous cherchez n'existe pas.",
-    "errorImageAlt": "Erreur 404"
+    "errorTitle": "Page not found",
+    "errorDescription": "Sorry, the page you are looking for does not exist.",
+    "errorImageAlt": "Error 404"
   },
   "Footer": {
     "links": {
-      "mentions": "Legal notice"
+      "mentions": "Legal Notice"
     },
-    "scrollTop": "Scroll to top"
+    "scrollTop": "Scroll to Top"
   }
 }

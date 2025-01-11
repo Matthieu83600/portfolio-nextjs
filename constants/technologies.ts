@@ -1,32 +1,32 @@
 import { TechnologyList } from '@/types/technologyList.types';
-import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
-import { DiCss3, DiJqueryLogo } from 'react-icons/di';
-import { IoLogoJavascript } from 'react-icons/io';
-import {
-  FaSass,
-  FaReact,
-  FaNode,
-  FaGitAlt,
-  FaFigma,
-  FaTrello,
-  FaSlack,
-} from 'react-icons/fa';
-import { BsBootstrap } from 'react-icons/bs';
-import {
-  TbBrandTypescript,
-  TbBrandRedux,
-  TbBrandNextjs,
-  TbBrandVue,
-  TbBrandTailwind,
-  TbBrandGitlab,
-  TbBrandVscode,
-} from 'react-icons/tb';
-import { SiExpress, SiMongodb, SiSwagger, SiPostman } from 'react-icons/si';
+import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai';
 import { BiLogoPostgresql } from 'react-icons/bi';
+import { BsBootstrap } from 'react-icons/bs';
+import { DiCss3, DiJqueryLogo } from 'react-icons/di';
+import {
+  FaFigma,
+  FaGitAlt,
+  FaNode,
+  FaReact,
+  FaSass,
+  FaSlack,
+  FaTrello,
+} from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io';
+import { SiExpress, SiMongodb, SiPostman, SiSwagger } from 'react-icons/si';
+import {
+  TbBrandGitlab,
+  TbBrandNextjs,
+  TbBrandRedux,
+  TbBrandTailwind,
+  TbBrandTypescript,
+  TbBrandVscode,
+  TbBrandVue,
+} from 'react-icons/tb';
 
 export const TECHNOLOGIES: TechnologyList = [
   {
-    category: 'Front-end',
+    category: 'SkillsSection.category.front',
     items: [
       { name: 'HTML', icon: AiFillHtml5 },
       { name: 'CSS', icon: DiCss3 },
@@ -43,21 +43,21 @@ export const TECHNOLOGIES: TechnologyList = [
     ],
   },
   {
-    category: 'Back-end',
+    category: 'SkillsSection.category.back',
     items: [
       { name: 'Node', icon: FaNode },
       { name: 'Express', icon: SiExpress },
     ],
   },
   {
-    category: 'Bases de données',
+    category: 'SkillsSection.category.databases',
     items: [
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'Postgresql', icon: BiLogoPostgresql },
     ],
   },
   {
-    category: 'Versioning',
+    category: 'SkillsSection.category.version',
     items: [
       { name: 'Git', icon: FaGitAlt },
       { name: 'Github', icon: AiFillGithub },
@@ -65,15 +65,15 @@ export const TECHNOLOGIES: TechnologyList = [
     ],
   },
   {
-    category: 'Outils UI/UX',
+    category: 'SkillsSection.category.tools',
     items: [{ name: 'Figma', icon: FaFigma }],
   },
   {
-    category: 'IDE',
+    category: 'SkillsSection.category.ide',
     items: [{ name: 'VsCode', icon: TbBrandVscode }],
   },
   {
-    category: 'Autres outils',
+    category: 'SkillsSection.category.other',
     items: [
       { name: 'Trello', icon: FaTrello },
       { name: 'Slack', icon: FaSlack },

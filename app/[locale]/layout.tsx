@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "Je m'appelle Matthieu Bonjour, et je suis développeur front-end junior. Bienvenue sur mon portfolio.",
   icons: {
-    icon: '/assets/darklogo.svg',
+    icon: '/assets/logo/darklogo.svg',
   },
   creator: 'Matthieu Bonjour',
   authors: [{ name: 'Matthieu Bonjour', url: 'https://matthieubonjour.dev' }],

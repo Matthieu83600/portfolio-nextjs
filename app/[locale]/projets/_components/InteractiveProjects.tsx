@@ -1,5 +1,6 @@
 'use client';
 import { PROJECTS } from '@/constants/projects';
+import { useTranslations } from 'next-intl';
 import { Kaushan_Script } from 'next/font/google';
 import { useEffect, useState } from 'react';
 import Filter from './Filter';
@@ -9,15 +10,13 @@ import ProjectCard from './ProjectCard';
 const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
 
 const InteractiveProjects = () => {
+  const t = useTranslations('ProjectsCard');
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState('');
   const categories = [
-    'OpenClassrooms',
-    'HTML',
-    'JavaScript',
-    'React',
-    'Next',
-    'OpenSource',
+    'Filter.OpenClassrooms',
+    'Filter.OpenSource',
+    'Filter.otherProjects',
   ];
 
   useEffect(() => {
@@ -43,7 +42,7 @@ const InteractiveProjects = () => {
             <h1
               className={`${kaushan.className} text-center text-5xl font-bold`}
             >
-              Mes projets
+              {t('title')}
             </h1>
           </div>
           <Filter

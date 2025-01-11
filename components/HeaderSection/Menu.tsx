@@ -21,7 +21,7 @@ const Menu = ({ locale, onClick }: { locale: string; onClick: () => void }) => {
   const t = useTranslations('Header');
 
   const mainMenu = (
-    <nav role="menu" className="flex items-center justify-between gap-5">
+    <nav className="flex items-center justify-between gap-5">
       <ul className="flex flex-col items-start justify-center gap-5 md:flex-row md:items-center">
         {MENU_OPTIONS.map((option) => {
           return (
@@ -29,7 +29,6 @@ const Menu = ({ locale, onClick }: { locale: string; onClick: () => void }) => {
               <a
                 onClick={handleOnClick}
                 href={option.url}
-                title={t(option.name)}
                 className="after:transition-width text-md relative flex gap-2 after:absolute after:-bottom-[3px] after:left-0 after:h-[2px] after:w-0 after:bg-current after:duration-300 after:ease-in-out hover:no-underline hover:after:w-full md:text-lg lg:text-2xl"
               >
                 {t(option.name)}

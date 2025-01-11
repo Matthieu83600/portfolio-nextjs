@@ -21,8 +21,366 @@
     "mail": "M'envoyer un e-mail"
   },
   "HomePage": {
+    "IntroSection": {
+      "title": "Salut, je suis Matthieu, un développeur front-end passionné.",
+      "description": "Je vous laisse découvrir mon portfolio.",
+      "linkProjects": "Voir mes derniers projets",
+      "linkCV": "Regarder mon CV"
+    },
+    "AboutSection": {
+      "title": "À propos de moi",
+      "subTitle": "Qui est Matthieu ?",
+      "description": "Salut ! Je m'appelle Matthieu Bonjour. Je me suis reconverti professionnellement et j'ai obtenu ma certification professionnelle de niveau Bac +2 avec OpenClassrooms.",
+      "description2": "Après quelques années passées dans le commerce. Notamment chez Cash Express et Darty où j'ai vendu / acheté / testé de nombreux produits multimédia, TV, divers et variés ; j'ai décidé de changer de direction.",
+      "description3": "Je suis donc, officiellement développeur intégrateur web.",
+      "description4": "Je prends énormément de plaisir à apprendre de nouveaux langages, et à les intégrer.",
+      "description5": "Je suis motivé, passionné par ce que j'entreprends et j'ai hâte d'en découvrir toujours plus. N'hésitez pas à me contacter si vous recherchez un profil comme le mien. Je serais ravi de répondre à vos attentes et d'intégrer une équipe.",
+      "altPhoto": "Mon portrait"
+    },
+    "TimelineSection": {
+      "2024": {
+        "text1": "En recherche active pour un poste junior en tant que développeur intégrateur web.",
+        "text2": "Intégration du projet communautaire DinoRPG.",
+        "text3": "Préparateur / Livreur de commandes chez Floral Concept."
+      },
+      "2023": {
+        "text1": "Formation développeur intégrateur web avec OpenClassrooms avec obtention de ma certification de niveau Bac +2."
+      },
+      "2023-2019": {
+        "text1": "Vendeur confirmé multimédia TV chez Darty."
+      },
+      "2019": {
+        "text1": "Conseiller vente chez Weldom."
+      },
+      "2018-2014": {
+        "text1": "Vendeur / Acheteur chez Cash Express."
+      },
+      "2014-2010": {
+        "text1": "Employé polyvalent chez McDonalds."
+      }
+    },
+    "SkillsSection": {
+      "title": "Compétences",
+      "text": "Je travaille avec les technologies et les outils suivants :",
+      "category": {
+        "front": "Front-end",
+        "back": "Back-end",
+        "databases": "Bases de données",
+        "version": "Gestionnaires",
+        "tools": "Outils UI / UX",
+        "ide": "IDE",
+        "other": "Autres outils"
+      }
+    },
     "ProjectSection": {
-      "title": "Derniers Projets"
+      "title": "Derniers Projets",
+      "more": "Plus de projets"
+    }
+  },
+  "ProjectsCard": {
+    "ProgressBarLoader": "Chargement des projets en cours",
+    "title": "Mes projets",
+    "subtitle": "Informations :",
+    "subtitle2": "Compétences développées :",
+    "linkCode": "Voir le code source",
+    "linkView": "Voir le site du projet",
+    "Filter": {
+      "all": "Tous",
+      "OpenClassrooms": "OpenClassrooms",
+      "OpenSource": "OpenSource",
+      "otherProjects": "Autres projets"
+    },
+    "project0": {
+      "title": "Riding Cities",
+      "description": "Le projet 2 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir les fondamentaux du langage HTML au travers du site Internet de Riding Cities. Riding Cities est une association fictive de skateboard.",
+      "competences": {
+        "1": "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS"
+      }
+    },
+    "project1": {
+      "title": "Booki",
+      "description": "Le projet 3 du parcours Intégrateur Web d'OpenClassrooms nous permet d'intégrer l'interface du site de Booki en utilisant du code HTML et CSS.",
+      "competences": {
+        "1": "Installer un environnement de développement front-end",
+        "2": "Implémenter une interface responsive avec HTML et CSS",
+        "3": "Intégrer du contenu conformément à une maquette avec HTML et CSS"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "Responsive",
+        "4": "Figma"
+      }
+    },
+    "project2": {
+      "title": "Ohmyfood",
+      "description": "Le projet 4 du parcours Intégrateur Web d'OpenClassrooms consite à intégrer l'interface du site d'Ohmyfood en commençant par la version mobile.",
+      "competences": {
+        "1": "Intégrer une maquette en mobile-first",
+        "2": "Mettre en œuvre des animations CSS",
+        "3": "Versionner son projet avec Git et Github"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "Sass",
+        "3": "Vue mobile",
+        "4": "Responsive",
+        "5": "Figma",
+        "6": "Git & GitHub"
+      }
+    },
+    "project3": {
+      "title": "Print It",
+      "description": "Le projet 5 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir le langage JavaScript au travers du site de Print It.",
+      "competences": {
+        "1": "Programmer en utilisant les fondamentaux de JavaScript"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "JavaScript"
+      }
+    },
+    "project4": {
+      "title": "Portfolio - Sophie Bluel",
+      "description": "Le projet 6 du parcours Intégrateur Web d'OpenClassrooms nous emmène sur la conception du site portfolio d'une architecte en utilisant JavaScript et en communiquant avec une API.",
+      "infos": "Si vous souhaitez voir le projet, veuillez suivre le readme pour lancer le backend / frontend du projet.",
+      "competences": {
+        "1": "Gérer les événements utilisateurs avec JavaScript",
+        "2": "Manipuler les éléments du DOM avec JavaScript",
+        "3": "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "JavaScript",
+        "4": "Figma",
+        "5": "API",
+        "6": "Postman"
+      }
+    },
+    "project5": {
+      "title": "Menu Maker",
+      "description": "Le projet 7 du parcours Intégrateur Web d'OpenClassrooms est différent des autres projets réalisés, il s'agit de planifier le développement du prochain site de notre client Qwenta.",
+      "competences": {
+        "1": "Présenter la solution technique",
+        "2": "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+        "3": "Découper des fonctionnalités en tâches pour préparer le développement",
+        "4": "Mettre en place une méthode de veille technologique",
+        "5": "Suivre le déroulement du projet grâce à un outil de gestion de projet"
+      },
+      "tags": {
+        "1": "Gestion de projet",
+        "2": "Kanban",
+        "3": "Méthode agile",
+        "4": "Veille technologique"
+      }
+    },
+    "project6": {
+      "title": "Kasa",
+      "description": "Le projet 8 du parcours Intégrateur Web d'OpenClassrooms consiste à développer la nouvelle plateforme web de Kasa en utilisant React.",
+      "competences": {
+        "1": "Initialiser une application avec Create React App",
+        "2": "Configurer la navigation entre les pages de l'application avec React Router",
+        "3": "Développer des éléments de l'interface d'un site web grâce à des composants React",
+        "4": "Mettre en œuvre des animations CSS",
+        "5": "Développer une interface web avec Sass"
+      },
+      "tags": {
+        "1": "React",
+        "2": "React-Router",
+        "3": "Sass",
+        "4": "Responsive",
+        "5": "Figma",
+        "6": "JSON"
+      }
+    },
+    "project7": {
+      "title": "Nina Carducci",
+      "description": "Le projet 9 du parcours Intégrateur Web d'OpenClassrooms consiste à améliorer les performances et le référencement naturel du site d'un client.",
+      "competences": {
+        "1": "Optimiser la performance d'un site web"
+      },
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "JavaScript",
+        "4": "Responsive",
+        "5": "SEO",
+        "6": "LightHouse"
+      }
+    },
+    "project8": {
+      "title": "724 events",
+      "description": "Le projet 10 du parcours Intégrateur Web consiste à débugger le site d'une agence d'événementiel appelée 724events.",
+      "competences": {
+        "1": "Débugger un site web grâce aux Chrome DevTools",
+        "2": "Rédiger un cahier de recette pour tester un site"
+      },
+      "tags": {
+        "1": "React",
+        "2": "Tests unitaires",
+        "3": "Tests d'intégration",
+        "4": "Debug",
+        "5": "Chrome DevTools"
+      }
+    },
+    "project9": {
+      "title": "Argent Bank",
+      "description": "Le projet 11 du parcours Intégrateur Web d'OpenClassrooms consiste à implémenter le front-end d'une application bancaire : Argent Bank en utilisant React.",
+      "infos": "Si vous souhaitez voir le projet, veuillez suivre le readme pour lancer le backend / frontend du projet.",
+      "competences": {
+        "1": "Afficher les données du back end sur l'interface via des appels API",
+        "2": "Configurer des routes API pour la communication client / serveur",
+        "3": "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
+      },
+      "tags": {
+        "1": "React",
+        "2": "React-Router",
+        "3": "Redux",
+        "4": "Sass",
+        "5": "Responsive",
+        "6": "API",
+        "7": "Postman",
+        "8": "Swagger"
+      }
+    },
+    "project10": {
+      "title": "Mon Portfolio",
+      "description": "Le projet 12 et dernier projet du parcours Intégrateur Web d'OpenClassrooms consiste à créer et mettre en ligne son site portfolio.",
+      "infos": "Vous pouvez retrouver le code de mon ancien portfolio créé lors de ma formation, vous êtes actuellement sur mon nouveau portfolio codé avec Nextjs.",
+      "competences": {
+        "1": "Déployer un site statique en ligne"
+      },
+      "tags": {
+        "1": "React",
+        "2": "React-Router",
+        "3": "Sass",
+        "4": "Styled-components",
+        "5": "React-responsive-carousel",
+        "6": "Emailjs",
+        "7": "Prettier",
+        "8": "JSON",
+        "9": "Figma"
+      }
+    },
+    "project11": {
+      "title": "Watowatch",
+      "description": "Ce projet consiste à retourner toutes les séries depuis l'API externe de TMDB. Chaque jour, une nouvelle suggestion de séries TV à regarder.",
+      "infos": "Ce site a été rédigé en anglais.",
+      "competences": {
+        "1": "Afficher les données du back end sur l'interface via des appels API",
+        "2": "Configurer des routes API pour la communication client / serveur"
+      },
+      "tags": {
+        "1": "React",
+        "2": "CSS",
+        "3": "Axios",
+        "4": "TMDB-API",
+        "5": "React-bootstrap-icons"
+      }
+    },
+    "project12": {
+      "title": "ISpent",
+      "description": "Ce projet consiste à suivre vos dépenses. Simple et efficace, vous rentrez votre rentrée d'argent et vos dépenses. Utilise React-redux pour gérer le store et Redux-persist pour garder en mémoire vos données en localStorage.",
+      "infos": "Ce site a été rédigé en anglais.",
+      "competences": {
+        "1": "Implémenter la gestion des données avec Redux.",
+        "2": "Persistance des données avec Redux-persist."
+      },
+      "tags": {
+        "1": "React",
+        "2": "CSS",
+        "3": "React-Redux",
+        "4": "Redux-persist",
+        "5": "React-bootstrap-icons"
+      }
+    },
+    "project13": {
+      "title": "Florence",
+      "description": "Création d'une landing page basique pour m'exercer sur le langage HTML et le CSS.",
+      "tags": {
+        "1": "HTML",
+        "2": "CSS"
+      }
+    },
+    "project14": {
+      "title": "Rand'images",
+      "description": "Mini-projet consistant à créer des hooks customisés.",
+      "tags": {
+        "1": "React",
+        "2": "Bootstrap",
+        "3": "Axios",
+        "4": "API",
+        "5": "Hooks customisés"
+      }
+    },
+    "project15": {
+      "title": "Zest",
+      "description": "Mini-projet créé lors d'un processus de recrutement d'une entreprise. Zest est un mini réseau social basé sur un style neumorphisme et responsive.",
+      "infos": "Aucun back-end n'est utilisé pour ce projet.",
+      "tags": {
+        "1": "HTML",
+        "2": "CSS",
+        "3": "Style neumorphisme",
+        "4": "JavaScript",
+        "5": "Responsive"
+      }
+    },
+    "project30": {
+      "title": "Mon Portfolio Actuel",
+      "description": "Pour un meilleur référencement naturel, et une lecture plus facile des robots d'indexation, j'ai décidé de redévelopper mon portfolio avec Next.js. avec les conseils de mon évaluateur lors de mon dernier projet avec OpenClassrooms.",
+      "infos": "Vous êtes actuellement en train de naviguer dessus 😊",
+      "competences": {
+        "1": "Concevoir un site avec Next.js",
+        "2": "Apprendre à utiliser Tailwind CSS",
+        "3": "Internationaliser mon portfolio en français, en anglais avec next-intl"
+      },
+      "tags": {
+        "1": "Nextjs",
+        "2": "TypeScript",
+        "3": "Tailwind CSS",
+        "4": "Next-themes",
+        "5": "Next-intl",
+        "6": "React-icons"
+      }
+    },
+    "project31": {
+      "title": "Eternal Twin - DinoRPG",
+      "description": "J'ai rejoint un projet communautaire open source pour continuer à développer mes compétences, apprendre à travailler en équipe, et découvrir de nouveaux langages. J'essaye de contribuer autant sur la partie front que la partie back du projet.",
+      "tags": {
+        "1": "Vue",
+        "2": "TypeScript",
+        "3": "Sass",
+        "4": "i18n",
+        "5": "Nodejs",
+        "6": "Express",
+        "7": "API",
+        "8": "Prisma",
+        "9": "Postgresql"
+      }
+    }
+  },
+  "LegalNoticePage": {
+    "title": "Mentions Légales",
+    "firstArticle": {
+      "title": "1 - Edition du site :",
+      "paragraph": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site internet <websiteLink>http://matthieubonjour.dev</websiteLink>, l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
+      "paragraph2": "Le présent site, accessible à l'URL <websiteLink>http://matthieubonjour.dev</websiteLink>, est édité par : Matthieu Bonjour, résidant 43 impasse de l'ancienne gendarmerie 83600 LES ADRETS DE L'ESTEREL.",
+      "director": "Directeur de publication :",
+      "contact": "Contact :"
+    },
+    "secondArticle": {
+      "title": "2 - Hébergement :",
+      "paragraph": "Le site est hébergé par la société Vercel Inc., située 440 N Barranca Ave #4133 Covina, CA 91723, United States."
+    },
+    "thirdArticle": {
+      "title": "3 - CNIL, gestion des données personnelles, cookies :",
+      "paragraph": "À ce jour, le site ne prélève aucun donnée de ses utilisateurs et ne provoque l'installation d'aucun cookie sur l'ordinateur de l'utilisateur."
     }
   },
   "NotFoundPage": {
@@ -32,7 +390,7 @@
   },
   "Footer": {
     "links": {
-      "mentions": "Mentions légales"
+      "mentions": "Mentions Légales"
     },
     "scrollTop": "Remonter en haut de la page"
   }

@@ -1,14 +1,16 @@
 'use client';
-import { useState, useRef } from 'react';
+import { ProjectCardProps } from '@/types/projects.types';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import { ProjectCardProps } from '@/types/projects.types';
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const t = useTranslations('ProjectsCard');
   const [isOpen, setIsOpen] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
   const toggleCollapse = () => {
@@ -26,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <div className="flex flex-grow flex-col">
         {/* Titre */}
         <div className="flex justify-between">
-          <h3 className="text-2xl font-bold">{project.title}</h3>
+          <h2 className="text-2xl font-bold">{t(project.title)}</h2>
           <button
             onClick={toggleCollapse}
             className="text-right text-gray-700 transition hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
@@ -38,13 +40,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
         {/* Description + infos */}
         <div className="mt-4 flex flex-grow flex-col font-light leading-7">
-          <p className="">{project.description}</p>
+          <p className="">{t(project.description)}</p>
           {project.infos && project.infos.length > 0 && (
-            <div className="italic">
-              <h4>
-                <u>Informations :</u>
-              </h4>
-              <p>{project.infos}</p>
+            <div className="mt-2 italic">
+              <h3>{t('subtitle')}</h3>
+              <p>{t(project.infos)}</p>
             </div>
           )}
         </div>
@@ -52,16 +52,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="mt-4 flex-grow">
           {project.competences && project.competences.length > 0 && (
             <>
-              <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                Compétences développées :
-              </h4>
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                {t('subtitle2')}
+              </h3>
               <ul className="mt-2 list-disc pl-5">
                 {project.competences.map((competence, index) => (
                   <li
                     key={index}
                     className="text-sm text-gray-700 dark:text-gray-300"
                   >
-                    {competence}
+                    {t(competence)}
                   </li>
                 ))}
               </ul>
@@ -75,7 +75,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               key={index}
               className="rounded-2xl border border-black bg-light-bg-btn px-2 text-sm leading-normal dark:border-white dark:bg-dark-bg-btn"
             >
-              {tag}
+              {t(tag)}
             </span>
           ))}
         </div>
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
               title="Voir le projet"
             >
-              Voir le projet
+              {t('linkView')}
             </Link>
           )}
           {project.codeLink && (
@@ -98,7 +98,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
               title="Voir le code"
             >
-              Voir le code
+              {t('linkCode')}
             </Link>
           )}
         </div>
