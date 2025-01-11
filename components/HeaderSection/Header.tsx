@@ -3,7 +3,6 @@ import { useMediaQuery } from '../../utils/media_query';
 import Logo from './Logo';
 import Menu from './Menu';
 import MobileMenu from './MobileMenu';
-import ThemeSwitcher from './ThemeSwitcher';
 
 const Header = ({ locale }: { locale: string }) => {
   const isMobile = useMediaQuery();
@@ -18,9 +17,6 @@ const Header = ({ locale }: { locale: string }) => {
           ) : (
             <Menu locale={locale} onClick={() => {}} />
           )}
-          <div className="flex items-center gap-5">
-            <ThemeSwitcher />
-          </div>
         </nav>
       </div>
     </header>

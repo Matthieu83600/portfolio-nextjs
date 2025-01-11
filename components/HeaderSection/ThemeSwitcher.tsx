@@ -1,7 +1,7 @@
 'use client';
 import { useTheme } from 'next-themes';
-import { BsMoon, BsSun } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
+import { BsMoon, BsSun } from 'react-icons/bs';
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -21,9 +21,9 @@ const ThemeSwitcher = () => {
       aria-label="Changer de thème"
     >
       {currentTheme === 'dark' ? (
-        <BsSun size={24} fill="yellow" />
+        <BsSun size={20} fill="yellow" />
       ) : (
-        <BsMoon size={24} fill="dark" />
+        <BsMoon size={20} fill="dark" />
       )}
     </button>
   );

@@ -1,5 +1,39 @@
 {
+  "Header": {
+    "Navbar": {
+      "mainMenu": {
+        "home": "Home",
+        "about": "About me",
+        "skills": "Skills",
+        "projects": "Projects"
+      },
+      "backMenu": {
+        "backToMainPageTitle": "Back to main page",
+        "backToMainText": "Back to main page"
+      }
+    }
+  },
+  "SocialMedia": {
+    "linkedin": "My LinkedIn profile",
+    "twitter": "My Twitter profile",
+    "gitlab": "My GitLab profile",
+    "github": "My GitHub profile",
+    "mail": "Send me an email"
+  },
   "HomePage": {
-    "title": "Home"
+    "ProjectSection": {
+      "title": "Last Projects"
+    }
+  },
+  "NotFoundPage": {
+    "errorTitle": "Page non trouvée",
+    "errorDescription": "Désolé, la page que vous cherchez n'existe pas.",
+    "errorImageAlt": "Erreur 404"
+  },
+  "Footer": {
+    "links": {
+      "mentions": "Legal notice"
+    },
+    "scrollTop": "Scroll to top"
   }
 }

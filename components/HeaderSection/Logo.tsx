@@ -22,18 +22,22 @@ const Logo = ({ locale }: { locale: string }) => {
   }
 
   return (
-    <div className="flex items-center gap-2 text-xl font-bold md:text-2xl">
+    <div className="flex items-center gap-2 text-xl font-bold lg:text-4xl">
       {pathname === `/${locale}` ? (
         <>
           <Image
-            src={theme === 'dark' ? '/assets/darklogo.svg' : '/assets/logo.svg'}
+            src={
+              theme === 'dark'
+                ? '/assets/logo/darklogo.svg'
+                : '/assets/logo/logo.svg'
+            }
             width={0}
             height={0}
             style={{ width: '70px', height: 'auto' }}
             loading="lazy"
             alt="Mon logo"
           />
-          <h1 className={`${kaushan.className} sm:text-4xl`}>
+          <h1 className={`${kaushan.className} hidden lg:block`}>
             Matthieu Bonjour
           </h1>
         </>
@@ -44,7 +48,11 @@ const Logo = ({ locale }: { locale: string }) => {
           role="link"
         >
           <Image
-            src={theme === 'dark' ? '/assets/darklogo.svg' : '/assets/logo.svg'}
+            src={
+              theme === 'dark'
+                ? '/assets/logo/darklogo.svg'
+                : '/assets/logo/logo.svg'
+            }
             width={0}
             height={0}
             style={{ width: '70px', height: 'auto' }}
