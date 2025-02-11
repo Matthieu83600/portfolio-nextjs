@@ -34,7 +34,7 @@ const AboutSection = () => {
             unoptimized
             src={moi || './assets/moi.webp'}
             width={320}
-            height={0}
+            height={400}
             style={{ width: '90%', height: 'auto' }}
             alt={t('AboutSection.altPhoto')}
             className="z-10 rounded-2xl"
