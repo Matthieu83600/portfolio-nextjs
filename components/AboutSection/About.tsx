@@ -2,9 +2,12 @@
 import { useTranslations } from 'next-intl';
 import { Kaushan_Script } from 'next/font/google';
 import Image from 'next/image';
-import moi from '../../public/assets/moi.webp';
 
-const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
+const kaushan = Kaushan_Script({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const AboutSection = () => {
   const t = useTranslations('HomePage');
@@ -31,10 +34,9 @@ const AboutSection = () => {
       <div className="col-span-2 col-start-1 row-span-5 row-start-1 md:col-span-4 md:col-start-9">
         <div className="relative mx-auto h-[320px] w-[320px] rounded-2xl drop-shadow-lg xl:h-[350px] xl:w-[350px] 2xl:h-[400px] 2xl:w-[400px]">
           <Image
-            unoptimized
-            src={moi || './assets/moi.webp'}
+            src="/assets/moi.webp"
             width={320}
-            height={400}
+            height={320}
             style={{ width: '90%', height: 'auto' }}
             alt={t('AboutSection.altPhoto')}
             className="z-10 rounded-2xl"

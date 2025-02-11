@@ -9,7 +9,6 @@ const ProjectsSection = ({ locale }: { locale: string }) => {
   return (
     <section id="projects" className="section my-12">
       <HeadingDivider title={t('ProjectSection.title')} />
-
       <div className="flex flex-col items-center gap-8 md:gap-14">
         <LastProjects />
         <Link

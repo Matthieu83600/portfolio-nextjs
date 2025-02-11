@@ -7,7 +7,11 @@ import Filter from './Filter';
 import ProgressBarLoader from './ProgressBarLoader';
 import ProjectCard from './ProjectCard';
 
-const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
+const kaushan = Kaushan_Script({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const InteractiveProjects = () => {
   const t = useTranslations('ProjectsCard');

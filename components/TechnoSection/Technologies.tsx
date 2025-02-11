@@ -8,7 +8,6 @@ const TechnologiesSection = () => {
     <section id="tech" className="section my-8">
       <HeadingDivider title={t('SkillsSection.title')} />
       <p className="my-8 text-2xl">{t('SkillsSection.text')}</p>
-
       {!!TECHNOLOGIES.length && (
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4">
           {TECHNOLOGIES.map((tech) => {

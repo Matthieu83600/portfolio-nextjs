@@ -1,11 +1,13 @@
 import Footer from '@/components/FooterSection/Footer';
 import Header from '@/components/HeaderSection/Header';
+import { routing } from '@/i18n/routing';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Lato } from 'next/font/google';
+import { notFound } from 'next/navigation';
 import './globals.css';
 import { ThemeContext } from './providers';
 
@@ -35,16 +37,20 @@ export const metadata: Metadata = {
   ],
 };
 
-const lato = Lato({ weight: '400', subsets: ['latin'] });
+const lato = Lato({ weight: '400', subsets: ['latin'], display: 'swap' });
 
 export default async function RootLayout({
   children,
-  params,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string };
 }>) {
-  const { locale } = await params;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning>

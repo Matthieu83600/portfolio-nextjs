@@ -6,7 +6,11 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
+const kaushan = Kaushan_Script({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const Logo = ({ locale }: { locale: string }) => {
   const pathname = usePathname();

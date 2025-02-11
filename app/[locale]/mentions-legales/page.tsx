@@ -2,7 +2,11 @@ import { useTranslations } from 'next-intl';
 import { Kaushan_Script } from 'next/font/google';
 import Layout from './layout';
 
-const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
+const kaushan = Kaushan_Script({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export default function Mentions() {
   const t = useTranslations('LegalNoticePage');
