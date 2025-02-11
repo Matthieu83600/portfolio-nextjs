@@ -1,14 +1,16 @@
 'use client';
+import { useScrollTo } from '@/hooks/useScrollTo';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useScrollTo } from '../../hooks/useScrollTo';
 import { BsArrowReturnLeft } from 'react-icons/bs';
 import { MENU_OPTIONS } from '../../constants/menu';
-import { SITE_ROUTES } from '../../constants/routes';
-import { SITE_STRINGS } from '../../constants/strings';
+import LocaleSwitcher from './LocaleSwitcher';
+import ThemeSwitcher from './ThemeSwitcher';
 
-const Menu = ({ onClick = () => {} }) => {
+const Menu = ({ locale, onClick }: { locale: string; onClick: () => void }) => {
   const pathname = usePathname();
+
   const { scrollToEl } = useScrollTo();
 
   const handleOnClick = (e: never) => {
@@ -16,8 +18,10 @@ const Menu = ({ onClick = () => {} }) => {
     window.setTimeout(() => onClick(), 350);
   };
 
+  const t = useTranslations('Header');
+
   const mainMenu = (
-    <nav role="menu">
+    <nav className="flex items-center justify-between gap-5">
       <ul className="flex flex-col items-start justify-center gap-5 md:flex-row md:items-center">
         {MENU_OPTIONS.map((option) => {
           return (
@@ -25,34 +29,37 @@ const Menu = ({ onClick = () => {} }) => {
               <a
                 onClick={handleOnClick}
                 href={option.url}
-                title={option.name}
-                className="after:transition-width relative flex gap-2 after:absolute after:-bottom-[3px] after:left-0 after:h-[2px] after:w-0 after:bg-current after:duration-300 after:ease-in-out hover:no-underline hover:after:w-full md:text-lg lg:text-2xl"
+                className="after:transition-width text-md relative flex gap-2 after:absolute after:-bottom-[3px] after:left-0 after:h-[2px] after:w-0 after:bg-current after:duration-300 after:ease-in-out hover:no-underline hover:after:w-full md:text-lg lg:text-2xl"
               >
-                {option.name}
+                {t(option.name)}
               </a>
             </li>
           );
         })}
       </ul>
+      <div className="flex items-center gap-5">
+        <ThemeSwitcher />
+        <LocaleSwitcher locale={locale} />
+      </div>
     </nav>
   );
 
   const backMenu = (
     <div>
       <Link
-        href={SITE_ROUTES.home}
-        title={SITE_STRINGS.backToMainPageTitle}
+        href={`/${locale}`}
+        title={t('Navbar.backMenu.backToMainPageTitle')}
         className="flex items-center gap-5"
       >
         <span>
           <BsArrowReturnLeft />
         </span>
-        {SITE_STRINGS.backToMainText}
+        {t('Navbar.backMenu.backToMainText')}
       </Link>
     </div>
   );
 
-  const content = pathname === SITE_ROUTES.home ? mainMenu : backMenu;
+  const content = pathname === `/${locale}` ? mainMenu : backMenu;
 
   if (MENU_OPTIONS.length === 0) {
     return null;

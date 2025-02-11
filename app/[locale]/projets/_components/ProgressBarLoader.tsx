@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
+import React, { useEffect, useState } from 'react';
 
 const ProgressBarLoader: React.FC = () => {
+  const t = useTranslations('ProjectsCard');
   const [progress, setProgress] = useState<number>(0);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ const ProgressBarLoader: React.FC = () => {
           style={{ width: `${progress}%`, transition: 'width 0.3s' }}
         />
       </div>
-      <p className="mt-4">Chargement des projets en cours...</p>
+      <p className="mt-4">{t('ProgressBarLoader')}</p>
     </div>
   );
 };

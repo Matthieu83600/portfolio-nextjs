@@ -1,23 +1,22 @@
 'use client';
+import { PROJECTS } from '@/constants/projects';
+import { useTranslations } from 'next-intl';
 import { Kaushan_Script } from 'next/font/google';
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Filter from './Filter';
 import ProgressBarLoader from './ProgressBarLoader';
 import ProjectCard from './ProjectCard';
-import Filter from './Filter';
-import { PROJECTS } from '@/constants/projects';
 
 const kaushan = Kaushan_Script({ weight: '400', subsets: ['latin'] });
 
 const InteractiveProjects = () => {
+  const t = useTranslations('ProjectsCard');
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState('');
   const categories = [
-    'OpenClassrooms',
-    'HTML',
-    'JavaScript',
-    'React',
-    'Next',
-    'OpenSource',
+    'Filter.OpenClassrooms',
+    'Filter.OpenSource',
+    'Filter.otherProjects',
   ];
 
   useEffect(() => {
@@ -34,7 +33,7 @@ const InteractiveProjects = () => {
     : PROJECTS;
 
   return (
-    <div className="container-md">
+    <>
       {loading ? (
         <ProgressBarLoader />
       ) : (
@@ -43,7 +42,7 @@ const InteractiveProjects = () => {
             <h1
               className={`${kaushan.className} text-center text-5xl font-bold`}
             >
-              Mes projets
+              {t('title')}
             </h1>
           </div>
           <Filter
@@ -58,7 +57,7 @@ const InteractiveProjects = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

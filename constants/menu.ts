@@ -3,22 +3,22 @@ import { MenuOption } from '@/types/menuOption.types';
 export const MENU_OPTIONS: MenuOption[] = [
   {
     id: '0',
-    name: 'Accueil',
+    name: 'Navbar.mainMenu.home',
     url: '#intro',
   },
   {
     id: '1',
-    name: 'À propos',
+    name: 'Navbar.mainMenu.about',
     url: '#about',
   },
   {
     id: '2',
-    name: 'Tech',
+    name: 'Navbar.mainMenu.skills',
     url: '#tech',
   },
   {
     id: '3',
-    name: 'Projets',
+    name: 'Navbar.mainMenu.projects',
     url: '#projects',
   },
 ];

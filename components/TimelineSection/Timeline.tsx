@@ -1,32 +1,37 @@
 'use client';
-import { useRef, useEffect } from 'react';
-
-const TimeLineData = [
-  {
-    year: '2024',
-    text: 'En recherche active pour un poste junior en tant que développeur intégrateur web.',
-    default: true, // Cet élément sera visible en premier
-  },
-  {
-    year: '2024',
-    text: 'Intégration du projet communautaire DinoRPG.',
-  },
-  {
-    year: '2024',
-    text: 'Préparateur / Livreur de commandes chez Floral Concept.',
-  },
-  {
-    year: '2023',
-    text: 'Formation développeur intégrateur web avec OpenClassrooms avec obtention de ma certification de niveau Bac +2.',
-  },
-  { year: '2023-2019', text: 'Vendeur confirmé multimédia TV chez Darty.' },
-  { year: '2019', text: 'Conseiller vente chez Weldom.' },
-  { year: '2018-2014', text: 'Vendeur / Acheteur chez Cash Express.' },
-  { year: '2014-2010', text: 'Employé polyvalent chez McDonalds.' },
-];
+import { useTranslations } from 'next-intl';
+import { useEffect, useRef, useMemo } from 'react';
 
 const TimeLine = () => {
   const carouselRef = useRef<HTMLUListElement>(null);
+  const t = useTranslations('HomePage');
+
+  const TimeLineData = useMemo(
+    () => [
+      {
+        year: '2024',
+        text: t('TimelineSection.2024.text1'),
+        default: true, // Cet élément sera visible en premier
+      },
+      {
+        year: '2024',
+        text: t('TimelineSection.2024.text3'),
+      },
+      {
+        year: '2024',
+        text: t('TimelineSection.2024.text2'),
+      },
+      {
+        year: '2023',
+        text: t('TimelineSection.2023.text1'),
+      },
+      { year: '2023-2019', text: t('TimelineSection.2023-2019.text1') },
+      { year: '2019', text: t('TimelineSection.2019.text1') },
+      { year: '2018-2014', text: t('TimelineSection.2018-2014.text1') },
+      { year: '2014-2010', text: t('TimelineSection.2014-2010.text1') },
+    ],
+    [t]
+  );
 
   useEffect(() => {
     if (carouselRef.current) {
@@ -40,7 +45,7 @@ const TimeLine = () => {
         carousel.scrollLeft = elementWidth * defaultIndex;
       }
     }
-  }, []);
+  }, [TimeLineData]);
 
   return (
     <section id="timeline" className="-mb-5 mt-5">

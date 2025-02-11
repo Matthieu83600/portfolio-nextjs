@@ -1,11 +1,13 @@
-import React from 'react';
 import { FilterProps } from '@/types/filterProps.types';
+import { useTranslations } from 'next-intl';
+import React from 'react';
 
 const Filter: React.FC<FilterProps> = ({
   activeCategory,
   categories,
   onCategoryChange,
 }) => {
+  const t = useTranslations('ProjectsCard');
   return (
     <div className="flex flex-wrap justify-center gap-4 py-5">
       {/* Bouton "Tous" pour réinitialiser le filtre */}
@@ -13,7 +15,7 @@ const Filter: React.FC<FilterProps> = ({
         onClick={() => onCategoryChange('')}
         className={`rounded-lg px-4 py-2 text-black ${activeCategory === '' ? 'bg-light-custom-gradient dark:bg-dark-custom-gradient' : 'bg-slate-100'} hover:bg-light-bg-btn-hover`}
       >
-        Tous
+        {t('Filter.all')}
       </button>
 
       {/* Boutons pour chaque catégorie */}
@@ -27,7 +29,7 @@ const Filter: React.FC<FilterProps> = ({
               : 'bg-slate-100'
           } hover:bg-light-bg-btn-hover`}
         >
-          {category}
+          {t(category)}
         </button>
       ))}
     </div>
