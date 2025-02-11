@@ -1,16 +1,9 @@
 'use client';
 import { Link } from '@/i18n/routing';
 import { useTheme } from 'next-themes';
-import { Kaushan_Script } from 'next/font/google';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-
-const kaushan = Kaushan_Script({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 const Logo = ({ locale }: { locale: string }) => {
   const pathname = usePathname();
@@ -41,9 +34,7 @@ const Logo = ({ locale }: { locale: string }) => {
             loading="lazy"
             alt="Mon logo"
           />
-          <h1 className={`${kaushan.className} hidden lg:block`}>
-            Matthieu Bonjour
-          </h1>
+          <h1 className="sr-only">Matthieu Bonjour</h1>
         </>
       ) : (
         <Link href={`/`} aria-label="Aller à la page d'accueil" role="link">

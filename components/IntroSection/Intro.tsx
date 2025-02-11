@@ -1,14 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { Kaushan_Script } from 'next/font/google';
 import Link from 'next/link';
 import { useScrollTo } from '../../hooks/useScrollTo';
-
-const kaushan = Kaushan_Script({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 const IntroSection = () => {
   const t = useTranslations('HomePage');
@@ -19,9 +12,7 @@ const IntroSection = () => {
     <section id="intro">
       <div className="flex flex-col items-center gap-4 py-5">
         <div className="py-5 md:py-10">
-          <h2
-            className={`${kaushan.className} text-center text-3xl font-bold md:text-5xl xl:text-6xl`}
-          >
+          <h2 className="text-center text-3xl font-bold italic md:text-5xl xl:text-6xl">
             {t('IntroSection.title')}
           </h2>
           <p className="mb-10 mt-3 text-xl text-light-text-secondary dark:text-dark-text-secondary">

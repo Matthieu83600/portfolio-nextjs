@@ -1,13 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { Kaushan_Script } from 'next/font/google';
 import Image from 'next/image';
-
-const kaushan = Kaushan_Script({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 const AboutSection = () => {
   const t = useTranslations('HomePage');
@@ -17,9 +10,7 @@ const AboutSection = () => {
       className="grid grid-cols-2 md:grid-rows-6 lg:grid-cols-12"
     >
       <div className="col-span-2 !col-start-1 row-span-6 row-start-1 md:col-span-9">
-        <h2
-          className={`${kaushan.className} after:bg-inherited mb-9 hidden items-center gap-4 bg-gradient-to-r from-gray-100 to-gray-50 bg-clip-text text-3xl font-extrabold uppercase text-slate-950 after:h-[1px] dark:text-slate-50 md:block md:text-4xl`}
-        >
+        <h2 className="after:bg-inherited mb-9 hidden items-center gap-4 bg-gradient-to-r from-gray-100 to-gray-50 bg-clip-text text-2xl font-extrabold uppercase text-slate-950 after:h-[1px] dark:text-slate-50 md:block md:text-4xl">
           {t('AboutSection.title')}
         </h2>
         <div className="relative z-20 mt-9 hidden rounded-2xl border border-slate-100 bg-light-bg-card/50 p-8 drop-shadow-lg backdrop-blur-lg dark:bg-dark-bg-card/50 md:block">
@@ -34,6 +25,7 @@ const AboutSection = () => {
       <div className="col-span-2 col-start-1 row-span-5 row-start-1 md:col-span-4 md:col-start-9">
         <div className="relative mx-auto h-[320px] w-[320px] rounded-2xl drop-shadow-lg xl:h-[350px] xl:w-[350px] 2xl:h-[400px] 2xl:w-[400px]">
           <Image
+            loading="eager"
             src="/assets/moi.webp"
             width={320}
             height={320}

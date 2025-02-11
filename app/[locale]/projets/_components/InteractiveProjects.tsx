@@ -1,17 +1,10 @@
 'use client';
 import { PROJECTS } from '@/constants/projects';
 import { useTranslations } from 'next-intl';
-import { Kaushan_Script } from 'next/font/google';
 import { useEffect, useState } from 'react';
 import Filter from './Filter';
 import ProgressBarLoader from './ProgressBarLoader';
 import ProjectCard from './ProjectCard';
-
-const kaushan = Kaushan_Script({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 const InteractiveProjects = () => {
   const t = useTranslations('ProjectsCard');
@@ -43,11 +36,7 @@ const InteractiveProjects = () => {
       ) : (
         <div className="container-md">
           <div className="flex flex-col items-center gap-4 py-5">
-            <h1
-              className={`${kaushan.className} text-center text-5xl font-bold`}
-            >
-              {t('title')}
-            </h1>
+            <h1 className="text-center text-5xl font-bold">{t('title')}</h1>
           </div>
           <Filter
             activeCategory={activeCategory}

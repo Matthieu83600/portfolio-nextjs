@@ -6,7 +6,6 @@ export default function NotFoundPage() {
   return (
     <div className="container-md mb-12 mt-12 flex flex-col items-center">
       <Image
-        unoptimized
         src="/assets/404-page-not-found.webp"
         width={400}
         height={400}
