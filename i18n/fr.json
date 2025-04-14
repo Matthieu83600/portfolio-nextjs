@@ -2,7 +2,6 @@
   "Header": {
     "Navbar": {
       "mainMenu": {
-        "home": "Accueil",
         "about": "À propos",
         "skills": "Compétences",
         "projects": "Projets"
@@ -10,6 +9,11 @@
       "backMenu": {
         "backToMainPageTitle": "Retour à la page d'accueil",
         "backToMainText": "Retour à la page d'accueil"
+      },
+      "themes": {
+        "light": "Thème clair",
+        "dark": "Thème sombre",
+        "system": "Thème système"
       }
     }
   },

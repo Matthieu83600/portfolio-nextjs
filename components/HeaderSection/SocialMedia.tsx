@@ -5,7 +5,7 @@ const SocialMedia = () => {
   const t = useTranslations('SocialMedia');
   return (
     <nav>
-      <ul className="flex items-center gap-5">
+      <ul className="flex items-center gap-6">
         {SOCIAL_MEDIA.map((item) => (
           <li key={item.id}>
             <a

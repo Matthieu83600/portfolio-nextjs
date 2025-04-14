@@ -2,7 +2,6 @@
   "Header": {
     "Navbar": {
       "mainMenu": {
-        "home": "Home",
         "about": "About me",
         "skills": "Skills",
         "projects": "Projects"
@@ -10,6 +9,11 @@
       "backMenu": {
         "backToMainPageTitle": "Back to main page",
         "backToMainText": "Back to home page"
+      },
+      "themes": {
+        "light": "Light Theme",
+        "dark": "Dark Theme",
+        "system": "System Theme"
       }
     }
   },
