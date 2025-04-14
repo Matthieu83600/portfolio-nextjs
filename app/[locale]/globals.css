@@ -1,3 +1,59 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --background-image-light-custom-gradient: linear-gradient(
+    90deg,
+    #ece9fa,
+    #97f0ff
+  );
+  --background-image-dark-custom-gradient: linear-gradient(
+    90deg,
+    #473fcb,
+    #3b35a0
+  );
+  --background-image-light-bg-custom-gradient: linear-gradient(
+    to bottom,
+    #fff,
+    #ece9fa,
+    #97f0ff
+  );
+  --background-image-dark-bg-custom-gradient: linear-gradient(
+    to top,
+    #000,
+    #161630,
+    #161629
+  );
+
+  --color-dark-bg: #161629;
+  --color-light-bg: #f3f0ff;
+  --color-light-text-primary: #0b1152;
+  --color-light-text-secondary: #121778;
+  --color-dark-text-primary: #efecfa;
+  --color-dark-text-secondary: #c9c2f8;
+  --color-light-bg-btn: #8febfc;
+  --color-light-bg-btn-hover: #97f0ff;
+  --color-dark-bg-btn: #473fcb;
+  --color-dark-bg-btn-hover: #3b35a0;
+  --color-light-bg-card: #ece9fa;
+  --color-dark-bg-card: #262355;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}

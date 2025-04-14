@@ -23,9 +23,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div
       ref={cardRef}
       tabIndex={-1}
-      className="flex min-h-[400px] flex-col justify-between rounded-lg bg-light-bg-card p-5 shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-700 dark:bg-dark-bg-card"
+      className="bg-light-bg-card dark:bg-dark-bg-card flex min-h-[400px] flex-col justify-between rounded-lg p-5 shadow-lg focus:ring-4 focus:ring-blue-700 focus:outline-hidden"
     >
-      <div className="flex flex-grow flex-col">
+      <div className="flex grow flex-col">
         {/* Titre */}
         <div className="flex justify-between">
           <h2 className="text-2xl font-bold">{t(project.title)}</h2>
@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </button>
         </div>
         {/* Description + infos */}
-        <div className="mt-4 flex flex-grow flex-col font-light leading-7">
+        <div className="mt-4 flex grow flex-col leading-7 font-light">
           <p className="">{t(project.description)}</p>
           {project.infos && project.infos.length > 0 && (
             <div className="mt-2 italic">
@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           )}
         </div>
         {/* Compétences avec titre conditionnel */}
-        <div className="mt-4 flex-grow">
+        <div className="mt-4 grow">
           {project.competences && project.competences.length > 0 && (
             <>
               <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
@@ -73,7 +73,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.tags.map((tag, index) => (
             <span
               key={index}
-              className="rounded-2xl border border-black bg-light-bg-btn px-2 text-sm leading-normal dark:border-white dark:bg-dark-bg-btn"
+              className="bg-light-bg-btn dark:bg-dark-bg-btn rounded-2xl border border-black px-2 text-sm leading-normal dark:border-white"
             >
               {t(tag)}
             </span>
@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <Link
               href={project.demoLink}
               target="_blank"
-              className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+              className="bg-light-bg-btn hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover rounded-lg border border-black px-7 py-3 dark:border-white"
               title="Voir le projet"
             >
               {t('linkView')}
@@ -95,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <Link
               href={project.codeLink}
               target="_blank"
-              className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+              className="bg-light-bg-btn hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover rounded-lg border border-black px-7 py-3 dark:border-white"
               title="Voir le code"
             >
               {t('linkCode')}

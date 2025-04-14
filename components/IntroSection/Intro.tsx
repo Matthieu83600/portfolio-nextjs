@@ -15,14 +15,14 @@ const IntroSection = () => {
           <h2 className="text-center text-3xl font-bold italic md:text-5xl xl:text-6xl">
             {t('IntroSection.title')}
           </h2>
-          <p className="mb-10 mt-3 text-xl text-light-text-secondary dark:text-dark-text-secondary">
+          <p className="text-light-text-secondary dark:text-dark-text-secondary mt-3 mb-10 text-xl">
             {t('IntroSection.description')}
           </p>
           <div className="flex flex-col gap-10 sm:flex-row">
             <Link
               href="#projects"
               onClick={onClick}
-              className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 text-[14pt] hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+              className="bg-light-bg-btn hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover rounded-lg border border-black px-7 py-3 text-[14pt] dark:border-white"
               aria-label="Derniers projets"
             >
               {t('IntroSection.linkProjects')}
@@ -30,7 +30,7 @@ const IntroSection = () => {
             <Link
               href="https://cvdesignr.com/p/65770bab74d9f"
               target="_blank"
-              className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 text-[14pt] hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+              className="bg-light-bg-btn hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover rounded-lg border border-black px-7 py-3 text-[14pt] dark:border-white"
               aria-label="Mon CV"
             >
               {t('IntroSection.linkCV')}

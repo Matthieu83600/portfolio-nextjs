@@ -4,15 +4,15 @@ import Image from 'next/image';
 export default function NotFoundPage() {
   const t = useTranslations('NotFoundPage');
   return (
-    <div className="container-md mb-12 mt-12 flex flex-col items-center">
+    <div className="container-md mt-12 mb-12 flex flex-col items-center">
       <Image
         src="/assets/404-page-not-found.webp"
         width={400}
         height={400}
         alt={t('errorImageAlt')}
       />
-      <h1 className="mb-8 mt-12 text-center text-3xl">{t('errorTitle')}</h1>
-      <p className="mb-12 mt-12 text-center text-xl">{t('errorDescription')}</p>
+      <h1 className="mt-12 mb-8 text-center text-3xl">{t('errorTitle')}</h1>
+      <p className="mt-12 mb-12 text-center text-xl">{t('errorDescription')}</p>
     </div>
   );
 }

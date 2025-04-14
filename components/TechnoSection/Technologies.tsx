@@ -23,7 +23,7 @@ const TechnologiesSection = () => {
                       <span role="img">
                         <item.icon size={32} />
                       </span>
-                      <span className="absolute left-1/2 mx-auto mt-3 w-max -translate-x-1/2 translate-y-full rounded-md bg-gray-800 px-2 text-sm text-light-text-primary opacity-0 transition-opacity group-focus-within:opacity-100 group-hover:opacity-100 dark:text-dark-text-primary">
+                      <span className="text-light-text-primary dark:text-dark-text-primary absolute left-1/2 mx-auto mt-3 w-max -translate-x-1/2 translate-y-full rounded-md bg-gray-800 px-2 text-sm opacity-0 transition-opacity group-focus-within:opacity-100 group-hover:opacity-100">
                         {item.name}
                       </span>
                     </div>

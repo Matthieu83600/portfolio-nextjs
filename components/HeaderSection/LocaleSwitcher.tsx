@@ -19,7 +19,7 @@ const LocaleSwitcher = ({ locale }: { locale: string }) => {
     <div id="locale-switcher" className="flex items-center">
       <button
         onClick={changeLocale}
-        className="flex cursor-pointer items-center justify-center rounded border border-transparent p-1"
+        className="flex cursor-pointer items-center justify-center rounded-sm border border-transparent p-1"
       >
         <Image
           src={

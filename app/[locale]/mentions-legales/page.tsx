@@ -11,7 +11,7 @@ export default function Mentions() {
           <div className="flex flex-col items-center gap-4 py-5">
             <h1 className="text-center text-5xl font-bold">{t('title')}</h1>
           </div>
-          <div className="flex max-w-7xl flex-col gap-3 pb-16 pt-10">
+          <div className="flex max-w-7xl flex-col gap-3 pt-10 pb-16">
             <h2 className="text-2xl underline">{t('firstArticle.title')}</h2>
             <p>
               {t.rich('firstArticle.paragraph', {

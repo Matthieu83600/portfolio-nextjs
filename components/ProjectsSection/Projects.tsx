@@ -14,7 +14,7 @@ const ProjectsSection = ({ locale }: { locale: string }) => {
         <Link
           href={`${locale}/projets`}
           aria-label="Aller à la page des projets"
-          className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+          className="bg-light-bg-btn hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover rounded-lg border border-black px-7 py-3 dark:border-white"
         >
           <button aria-label="Voir plus de projets">
             {t('ProjectSection.more')}

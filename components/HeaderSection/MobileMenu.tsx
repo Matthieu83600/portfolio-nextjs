@@ -24,7 +24,7 @@ const MobileMenu = ({ locale }: { locale: string }) => {
       <div>
         {isOpen && (
           <div
-            className={`fixed left-0 right-0 top-0 z-50 min-h-screen backdrop-blur-md`}
+            className={`fixed top-0 right-0 left-0 z-50 min-h-screen backdrop-blur-md`}
           >
             <header className="border-b-brand-light z-10 flex items-center justify-between border-b p-6">
               <SocialMedia />

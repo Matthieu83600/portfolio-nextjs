@@ -55,7 +55,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${lato.className} mx-4 !overflow-x-hidden bg-light-bg-custom-gradient text-light-text-primary antialiased dark:bg-dark-bg-custom-gradient dark:text-dark-text-primary sm:mx-8 md:mx-10`}
+        className={`${lato.className} bg-light-bg-custom-gradient text-light-text-primary dark:bg-dark-bg-custom-gradient dark:text-dark-text-primary mx-4 overflow-x-hidden! antialiased sm:mx-8 md:mx-10`}
       >
         <ThemeContext>
           <NextIntlClientProvider messages={messages}>

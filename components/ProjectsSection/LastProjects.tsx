@@ -14,17 +14,17 @@ const LastProjects = () => {
       {lastProjects.map((project: Project) => (
         <div
           key={project.id}
-          className="flex min-h-[400px] flex-grow flex-col rounded-2xl border border-slate-100 bg-light-bg-card/50 p-6 shadow-lg drop-shadow-lg backdrop-blur-lg dark:bg-dark-bg-card/50"
+          className="bg-light-bg-card/50 dark:bg-dark-bg-card/50 flex min-h-[400px] grow flex-col rounded-2xl border border-slate-100 p-6 shadow-lg drop-shadow-lg backdrop-blur-lg"
         >
-          <div className="flex flex-grow flex-col">
+          <div className="flex grow flex-col">
             <h3 className="mt-4 text-2xl font-bold">{t(project.title)}</h3>
-            <p className="font-light leading-7">{t(project.description)}</p>
+            <p className="leading-7 font-light">{t(project.description)}</p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
             {project.tags.map((tag, index) => (
               <span
                 key={index}
-                className="rounded-2xl border border-black bg-light-bg-btn px-2 text-sm leading-normal dark:border-white dark:bg-dark-bg-btn"
+                className="bg-light-bg-btn dark:bg-dark-bg-btn rounded-2xl border border-black px-2 text-sm leading-normal dark:border-white"
               >
                 {t(tag)}
               </span>
@@ -35,7 +35,7 @@ const LastProjects = () => {
               <Link
                 href={project.demoLink}
                 target="_blank"
-                className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+                className="bg-light-bg-btn hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover rounded-lg border border-black px-7 py-3 dark:border-white"
                 title="Aller voir le repository"
               >
                 {t('linkView')}
@@ -45,7 +45,7 @@ const LastProjects = () => {
               <Link
                 href={project.codeLink}
                 target="_blank"
-                className="rounded-lg border border-black bg-light-bg-btn px-7 py-3 hover:bg-light-bg-btn-hover dark:border-white dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover"
+                className="bg-light-bg-btn hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover rounded-lg border border-black px-7 py-3 dark:border-white"
                 title="Consulter le site"
               >
                 {t('linkCode')}

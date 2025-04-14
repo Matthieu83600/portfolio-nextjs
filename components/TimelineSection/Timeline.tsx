@@ -48,10 +48,10 @@ const TimeLine = () => {
   }, [TimeLineData]);
 
   return (
-    <section id="timeline" className="-mb-5 mt-5">
+    <section id="timeline" className="mt-5 -mb-5">
       <ul
         ref={carouselRef}
-        className="flex snap-x snap-mandatory gap-5 overflow-x-auto py-5 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-light-bg-btn dark:scrollbar-thumb-dark-bg-btn"
+        className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-light-bg-btn dark:scrollbar-thumb-dark-bg-btn flex snap-x snap-mandatory gap-5 overflow-x-auto py-5"
       >
         {TimeLineData.map((item, index) => (
           <li
@@ -64,7 +64,7 @@ const TimeLine = () => {
               className="flex items-center gap-4 text-2xl font-bold"
             >
               {`${item.year}`}
-              <hr className="w-[58%] border-2 border-light-bg-btn dark:border-dark-bg-btn" />
+              <hr className="border-light-bg-btn dark:border-dark-bg-btn w-[58%] border-2" />
             </h3>
             <p className="tracking-wide">{item.text}</p>
           </li>
