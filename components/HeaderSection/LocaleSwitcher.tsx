@@ -1,7 +1,15 @@
 'use client';
+import * as React from 'react';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const LocaleSwitcher = ({ locale }: { locale: string }) => {
   const router = useRouter();
@@ -16,23 +24,27 @@ const LocaleSwitcher = ({ locale }: { locale: string }) => {
   };
 
   return (
-    <div id="locale-switcher" className="flex items-center">
-      <button
-        onClick={changeLocale}
-        className="flex cursor-pointer items-center justify-center rounded-sm border border-transparent p-1"
-      >
-        <Image
-          src={
-            selectedLocale === 'fr'
-              ? '/assets/flags/lang_en.webp'
-              : '/assets/flags/lang_fr.webp'
-          }
-          alt={selectedLocale === 'fr' ? 'English' : 'Français'}
-          width={20}
-          height={20}
-        />
-      </button>
-    </div>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" size="icon">
+          <Image
+            src={
+              selectedLocale === 'fr'
+                ? '/assets/flags/lang_fr.webp'
+                : '/assets/flags/lang_en.webp'
+            }
+            alt={selectedLocale === 'fr' ? 'Français' : 'English'}
+            width={20}
+            height={20}
+          />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={changeLocale}>
+          {selectedLocale === 'fr' ? 'English' : 'Français'}
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 
