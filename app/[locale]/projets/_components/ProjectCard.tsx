@@ -4,10 +4,13 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRef, useState } from 'react';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import { Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const t = useTranslations('ProjectsCard');
@@ -23,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div
       ref={cardRef}
       tabIndex={-1}
-      className="bg-light-bg-card dark:bg-dark-bg-card flex min-h-[400px] flex-col justify-between rounded-lg p-5 shadow-lg focus:ring-4 focus:ring-blue-700 focus:outline-hidden"
+      className="bg-light-bg-card/50 dark:bg-dark-bg-card/50 flex min-h-[400px] grow flex-col rounded-2xl border border-slate-100 p-6 shadow-lg drop-shadow-lg backdrop-blur-lg focus:ring-4 focus:ring-blue-700 focus:outline-hidden"
     >
       <div className="flex grow flex-col">
         {/* Titre */}
@@ -106,27 +109,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       {/* Contenu */}
       {isOpen && (
         <div className="mt-10">
-          {/* Swiper pour afficher les images du projet */}
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={10}
-            slidesPerView={1}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-          >
-            {project.pictures.map((image, index) => (
-              <SwiperSlide key={index}>
-                <Image
-                  src={image}
-                  alt={project.title}
-                  width={420}
-                  height={240}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <Carousel>
+            <CarouselContent>
+              {project.pictures.map((image, index) => (
+                <CarouselItem key={index} className="basis-1/3">
+                  <Image
+                    src={image}
+                    alt={project.title}
+                    width={420}
+                    height={240}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       )}
     </div>
