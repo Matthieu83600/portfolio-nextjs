@@ -65,7 +65,7 @@ export default async function RootLayout({
               <Analytics />
               <SpeedInsights />
             </main>
-            <Footer locale={locale} />
+            <Footer />
           </NextIntlClientProvider>
         </ThemeContext>
       </body>
