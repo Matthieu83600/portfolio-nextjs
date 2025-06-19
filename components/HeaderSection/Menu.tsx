@@ -47,7 +47,7 @@ const Menu = ({ locale, onClick }: { locale: string; onClick: () => void }) => {
   const backMenu = (
     <div>
       <Link
-        href={`/${locale}`}
+        href={{ pathname: '/' }}
         title={t('Navbar.backMenu.backToMainPageTitle')}
         className="flex items-center gap-5"
       >
