@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function NotFoundPage() {
   const t = useTranslations('NotFoundPage');
   return (
-    <div className="container-md mt-12 mb-12 flex flex-col items-center">
+    <div className="container-md mt-12 mb-12 flex min-h-lvh flex-col items-center">
       <Image
         src="/assets/404-page-not-found.webp"
         width={400}
