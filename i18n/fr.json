@@ -87,7 +87,9 @@
     "subtitle": "Informations :",
     "subtitle2": "Compétences développées :",
     "linkCode": "Voir le code source",
+    "titleLinkCode": "Voir le code source du projet",
     "linkView": "Voir le site du projet",
+    "titleLinkView": "Voir le site du projet",
     "Filter": {
       "all": "Tous",
       "OpenClassrooms": "OpenClassrooms",

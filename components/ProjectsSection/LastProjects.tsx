@@ -43,13 +43,13 @@ const LastProjects = () => {
               </span>
             ))}
           </CardContent>
-          <CardFooter className="flex justify-around gap-2">
+          <CardFooter className="flex flex-wrap justify-around gap-2">
             {project.demoLink && (
               <Button variant="primary">
                 <Link
                   href={project.demoLink}
                   target="_blank"
-                  title="Aller voir le repository"
+                  title={t('titleLinkView')}
                 >
                   {t('linkView')}
                 </Link>
@@ -60,7 +60,7 @@ const LastProjects = () => {
                 <Link
                   href={project.codeLink}
                   target="_blank"
-                  title="Consulter le site"
+                  title={t('titleLinkCode')}
                 >
                   {t('linkCode')}
                 </Link>

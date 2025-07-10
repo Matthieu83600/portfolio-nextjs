@@ -87,7 +87,9 @@
     "subtitle": "Information:",
     "subtitle2": "Skills developed:",
     "linkCode": "View source code",
+    "titleLinkCode": "View project source code",
     "linkView": "View project website",
+    "titleLinkView": "View project website",
     "Filter": {
       "all": "All",
       "OpenClassrooms": "OpenClassrooms",
