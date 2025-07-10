@@ -92,17 +92,53 @@
       "all": "All",
       "OpenClassrooms": "OpenClassrooms",
       "OpenSource": "OpenSource",
+      "FRM": "Frontend Mentor",
+      "Udemy": "Udemy",
       "otherProjects": "Other projects"
+    },
+    "Tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "sass": "Sass",
+      "js": "JavaScript",
+      "react": "React",
+      "react-router": "React Router",
+      "redux": "Redux",
+      "redux-persist": "Redux Persist",
+      "hooks": "Hooks",
+      "bootstrap": "Bootstrap",
+      "styled-components": "Styled-components",
+      "neumorphism": "Neumorphism style",
+      "react-responsive-carousel": "React-responsive-carousel",
+      "emailjs": "Emailjs",
+      "react-bootstrap-icons": "React-bootstrap-icons",
+      "prettier": "Prettier",
+      "axios": "Axios",
+      "tmdb-api": "TMDB-API",
+      "api": "API",
+      "json": "JSON",
+      "mobileFirst-workflow": "Mobile-fisrt workflow",
+      "responsive": "Responsive",
+      "seo": "SEO",
+      "lighthouse": "Lighthouse",
+      "tu": "Unit tests",
+      "ti": "Integration tests",
+      "debug": "Debug",
+      "chrome": "Chrome DevTools",
+      "figma": "Figma Design",
+      "git": "Git & GitHub",
+      "postman": "Postman",
+      "swagger": "Swagger",
+      "project": "Project management",
+      "kanban": "Kanban",
+      "agile": "Agile method",
+      "veille": "Technological watch"
     },
     "project0": {
       "title": "Riding Cities",
       "description": "Project 2 of the OpenClassrooms Web Integrator course allows us to discover the fundamentals of HTML through the website of Riding Cities. Riding Cities is a fictional skateboarding association.",
       "competences": {
         "1": "Integrate elements on a web page using the fundamentals of HTML"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS"
       }
     },
     "project1": {
@@ -112,12 +148,6 @@
         "1": "Set up a front-end development environment",
         "2": "Implement a responsive interface with HTML and CSS",
         "3": "Integrate content according to a mockup using HTML and CSS"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "Responsive",
-        "4": "Figma"
       }
     },
     "project2": {
@@ -127,14 +157,6 @@
         "1": "Integrate a design using a mobile-first approach",
         "2": "Implement CSS animations",
         "3": "Version control the project with Git and GitHub"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "Sass",
-        "3": "Mobile view",
-        "4": "Responsive",
-        "5": "Figma",
-        "6": "Git & GitHub"
       }
     },
     "project3": {
@@ -142,11 +164,6 @@
       "description": "Project 5 of the OpenClassrooms Web Integrator course allows us to discover the JavaScript language through the Print It website.",
       "competences": {
         "1": "Program using the fundamentals of JavaScript"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "JavaScript"
       }
     },
     "project4": {
@@ -157,14 +174,6 @@
         "1": "Manage user events with JavaScript",
         "2": "Manipulate DOM elements with JavaScript",
         "3": "Retrieve user data in JavaScript via forms"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "JavaScript",
-        "4": "Figma",
-        "5": "API",
-        "6": "Postman"
       }
     },
     "project5": {
@@ -176,12 +185,6 @@
         "3": "Break down features into tasks to prepare for development",
         "4": "Implement a technological watch method",
         "5": "Track the project's progress using a project management tool"
-      },
-      "tags": {
-        "1": "Project management",
-        "2": "Kanban",
-        "3": "Agile method",
-        "4": "Technological watch"
       }
     },
     "project6": {
@@ -193,14 +196,6 @@
         "3": "Develop interface elements of a website using React components",
         "4": "Implement CSS animations",
         "5": "Develop a web interface with Sass"
-      },
-      "tags": {
-        "1": "React",
-        "2": "React-Router",
-        "3": "Sass",
-        "4": "Responsive",
-        "5": "Figma",
-        "6": "JSON"
       }
     },
     "project7": {
@@ -208,14 +203,6 @@
       "description": "Project 9 of the OpenClassrooms Web Integrator course involves improving the performance and SEO of a client's website.",
       "competences": {
         "1": "Optimize the performance of a website"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "JavaScript",
-        "4": "Responsive",
-        "5": "SEO",
-        "6": "LightHouse"
       }
     },
     "project8": {
@@ -224,13 +211,6 @@
       "competences": {
         "1": "Debug a website using Chrome DevTools",
         "2": "Write a test plan to test a website"
-      },
-      "tags": {
-        "1": "React",
-        "2": "Unit tests",
-        "3": "Integration tests",
-        "4": "Debug",
-        "5": "Chrome DevTools"
       }
     },
     "project9": {
@@ -241,16 +221,6 @@
         "1": "Display backend data on the interface via API calls",
         "2": "Configure API routes for client/server communication",
         "3": "Implement data management with Redux to ensure the frontend's functionality"
-      },
-      "tags": {
-        "1": "React",
-        "2": "React-Router",
-        "3": "Redux",
-        "4": "Sass",
-        "5": "Responsive",
-        "6": "API",
-        "7": "Postman",
-        "8": "Swagger"
       }
     },
     "project10": {
@@ -259,17 +229,6 @@
       "infos": "You can find the code of my old portfolio created during my training, you are currently on my new portfolio coded with Nextjs.",
       "competences": {
         "1": "Deploy a static website online"
-      },
-      "tags": {
-        "1": "React",
-        "2": "React-Router",
-        "3": "Sass",
-        "4": "Styled-components",
-        "5": "React-responsive-carousel",
-        "6": "Emailjs",
-        "7": "Prettier",
-        "8": "JSON",
-        "9": "Figma"
       }
     },
     "project11": {
@@ -279,13 +238,6 @@
       "competences": {
         "1": "Display backend data on the interface via API calls",
         "2": "Configure API routes for client/server communication"
-      },
-      "tags": {
-        "1": "React",
-        "2": "CSS",
-        "3": "Axios",
-        "4": "TMDB-API",
-        "5": "React-bootstrap-icons"
       }
     },
     "project12": {
@@ -295,44 +247,35 @@
       "competences": {
         "1": "Implement data management with Redux",
         "2": "Persist data with Redux-persist"
-      },
-      "tags": {
-        "1": "React",
-        "2": "CSS",
-        "3": "React-Redux",
-        "4": "Redux-persist",
-        "5": "React-bootstrap-icons"
       }
     },
     "project13": {
       "title": "Florence",
-      "description": "Creation of a basic landing page to practice HTML and CSS.",
-      "tags": {
-        "1": "HTML",
-        "2": "CSS"
+      "description": "Creation of a landing page about the city of Florence.",
+      "competences": {
+        "1": "Implement an interface with HTML and CSS"
       }
     },
     "project14": {
       "title": "Rand'images",
       "description": "Mini-project involving the creation of custom hooks.",
-      "tags": {
-        "1": "React",
-        "2": "Bootstrap",
-        "3": "Axios",
-        "4": "API",
-        "5": "Custom hooks"
+      "competences": {
+        "1": "Manage state and effects in a React component using useState and useEffect hooks.",
+        "2": "Make asynchronous API calls with axios to fetch and display dynamic data.",
+        "3": "Create and use custom hooks to encapsulate and reuse logic, such as scroll detection.",
+        "4": "Integrate and structure React components for better code organization and modularity.",
+        "5": "Enhance user experience with loading state management and the use of CSS modules for styling."
       }
     },
     "project15": {
       "title": "Zest",
       "description": "Mini-project created during a recruitment process for a company. Zest is a mini social network based on a neumorphism style and responsive design.",
       "infos": "No back-end is used for this project.",
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "Neumorphism style",
-        "4": "JavaScript",
-        "5": "Responsive"
+      "competences": {
+        "1": "Implement a neumorphic design using CSS to create a modern user interface",
+        "2": "Develop a responsive interface for various devices and screen sizes",
+        "3": "Structure application content with HTML and add interactivity using JavaScript",
+        "4": "Use Git and GitHub for version control and collaboration on the project"
       }
     },
     "project30": {
