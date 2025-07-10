@@ -12,6 +12,8 @@ const InteractiveProjects = () => {
   const [activeCategory, setActiveCategory] = useState('');
   const categories = [
     'Filter.OpenClassrooms',
+    'Filter.FRM',
+    'Filter.Udemy',
     'Filter.OpenSource',
     'Filter.otherProjects',
   ];

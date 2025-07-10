@@ -92,17 +92,53 @@
       "all": "Tous",
       "OpenClassrooms": "OpenClassrooms",
       "OpenSource": "OpenSource",
+      "FRM": "Frontend Mentor",
+      "Udemy": "Udemy",
       "otherProjects": "Autres projets"
+    },
+    "Tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "sass": "Sass",
+      "js": "JavaScript",
+      "react": "React",
+      "react-router": "React Router",
+      "redux": "Redux",
+      "redux-persist": "Redux Persist",
+      "hooks": "Hooks",
+      "bootstrap": "Bootstrap",
+      "styled-components": "Styled-components",
+      "neumorphism": "Style neumorphisme",
+      "react-responsive-carousel": "React-responsive-carousel",
+      "emailjs": "Emailjs",
+      "react-bootstrap-icons": "React-bootstrap-icons",
+      "prettier": "Prettier",
+      "axios": "Axios",
+      "tmdb-api": "TMDB-API",
+      "api": "API",
+      "json": "JSON",
+      "mobileFirst-workflow": "Vue mobile d'abord",
+      "responsive": "Responsive",
+      "seo": "SEO",
+      "lighthouse": "Lighthouse",
+      "tu": "Tests unitaires",
+      "ti": "Tests d'intégration",
+      "debug": "Debug",
+      "chrome": "Chrome DevTools",
+      "figma": "Design Figma",
+      "git": "Git & GitHub",
+      "postman": "Postman",
+      "swagger": "Swagger",
+      "project": "Gestion de projet",
+      "kanban": "Kanban",
+      "agile": "Méthode agile",
+      "veille": "Veille technologique"
     },
     "project0": {
       "title": "Riding Cities",
       "description": "Le projet 2 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir les fondamentaux du langage HTML au travers du site Internet de Riding Cities. Riding Cities est une association fictive de skateboard.",
       "competences": {
         "1": "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS"
       }
     },
     "project1": {
@@ -112,12 +148,6 @@
         "1": "Installer un environnement de développement front-end",
         "2": "Implémenter une interface responsive avec HTML et CSS",
         "3": "Intégrer du contenu conformément à une maquette avec HTML et CSS"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "Responsive",
-        "4": "Figma"
       }
     },
     "project2": {
@@ -127,14 +157,6 @@
         "1": "Intégrer une maquette en mobile-first",
         "2": "Mettre en œuvre des animations CSS",
         "3": "Versionner son projet avec Git et Github"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "Sass",
-        "3": "Vue mobile",
-        "4": "Responsive",
-        "5": "Figma",
-        "6": "Git & GitHub"
       }
     },
     "project3": {
@@ -142,11 +164,6 @@
       "description": "Le projet 5 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir le langage JavaScript au travers du site de Print It.",
       "competences": {
         "1": "Programmer en utilisant les fondamentaux de JavaScript"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "JavaScript"
       }
     },
     "project4": {
@@ -157,14 +174,6 @@
         "1": "Gérer les événements utilisateurs avec JavaScript",
         "2": "Manipuler les éléments du DOM avec JavaScript",
         "3": "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "JavaScript",
-        "4": "Figma",
-        "5": "API",
-        "6": "Postman"
       }
     },
     "project5": {
@@ -176,12 +185,6 @@
         "3": "Découper des fonctionnalités en tâches pour préparer le développement",
         "4": "Mettre en place une méthode de veille technologique",
         "5": "Suivre le déroulement du projet grâce à un outil de gestion de projet"
-      },
-      "tags": {
-        "1": "Gestion de projet",
-        "2": "Kanban",
-        "3": "Méthode agile",
-        "4": "Veille technologique"
       }
     },
     "project6": {
@@ -193,14 +196,6 @@
         "3": "Développer des éléments de l'interface d'un site web grâce à des composants React",
         "4": "Mettre en œuvre des animations CSS",
         "5": "Développer une interface web avec Sass"
-      },
-      "tags": {
-        "1": "React",
-        "2": "React-Router",
-        "3": "Sass",
-        "4": "Responsive",
-        "5": "Figma",
-        "6": "JSON"
       }
     },
     "project7": {
@@ -208,14 +203,6 @@
       "description": "Le projet 9 du parcours Intégrateur Web d'OpenClassrooms consiste à améliorer les performances et le référencement naturel du site d'un client.",
       "competences": {
         "1": "Optimiser la performance d'un site web"
-      },
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "JavaScript",
-        "4": "Responsive",
-        "5": "SEO",
-        "6": "LightHouse"
       }
     },
     "project8": {
@@ -224,13 +211,6 @@
       "competences": {
         "1": "Débugger un site web grâce aux Chrome DevTools",
         "2": "Rédiger un cahier de recette pour tester un site"
-      },
-      "tags": {
-        "1": "React",
-        "2": "Tests unitaires",
-        "3": "Tests d'intégration",
-        "4": "Debug",
-        "5": "Chrome DevTools"
       }
     },
     "project9": {
@@ -241,16 +221,6 @@
         "1": "Afficher les données du back end sur l'interface via des appels API",
         "2": "Configurer des routes API pour la communication client / serveur",
         "3": "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
-      },
-      "tags": {
-        "1": "React",
-        "2": "React-Router",
-        "3": "Redux",
-        "4": "Sass",
-        "5": "Responsive",
-        "6": "API",
-        "7": "Postman",
-        "8": "Swagger"
       }
     },
     "project10": {
@@ -259,17 +229,6 @@
       "infos": "Vous pouvez retrouver le code de mon ancien portfolio créé lors de ma formation, vous êtes actuellement sur mon nouveau portfolio codé avec Nextjs.",
       "competences": {
         "1": "Déployer un site statique en ligne"
-      },
-      "tags": {
-        "1": "React",
-        "2": "React-Router",
-        "3": "Sass",
-        "4": "Styled-components",
-        "5": "React-responsive-carousel",
-        "6": "Emailjs",
-        "7": "Prettier",
-        "8": "JSON",
-        "9": "Figma"
       }
     },
     "project11": {
@@ -279,13 +238,6 @@
       "competences": {
         "1": "Afficher les données du back end sur l'interface via des appels API",
         "2": "Configurer des routes API pour la communication client / serveur"
-      },
-      "tags": {
-        "1": "React",
-        "2": "CSS",
-        "3": "Axios",
-        "4": "TMDB-API",
-        "5": "React-bootstrap-icons"
       }
     },
     "project12": {
@@ -295,44 +247,35 @@
       "competences": {
         "1": "Implémenter la gestion des données avec Redux.",
         "2": "Persistance des données avec Redux-persist."
-      },
-      "tags": {
-        "1": "React",
-        "2": "CSS",
-        "3": "React-Redux",
-        "4": "Redux-persist",
-        "5": "React-bootstrap-icons"
       }
     },
     "project13": {
       "title": "Florence",
-      "description": "Création d'une landing page basique pour m'exercer sur le langage HTML et le CSS.",
-      "tags": {
-        "1": "HTML",
-        "2": "CSS"
+      "description": "Création d'une landing page sur la ville de Florence.",
+      "competences": {
+        "1": "Implémenter une interface avec HTML et CSS"
       }
     },
     "project14": {
       "title": "Rand'images",
       "description": "Mini-projet consistant à créer des hooks customisés.",
-      "tags": {
-        "1": "React",
-        "2": "Bootstrap",
-        "3": "Axios",
-        "4": "API",
-        "5": "Hooks customisés"
+      "competences": {
+        "1": "Gérer l'état et les effets dans un composant React en utilisant les hooks useState et useEffect",
+        "2": "Effectuer des appels API asynchrones avec axios pour récupérer et afficher des données dynamiques",
+        "3": "Créer et utiliser des hooks personnalisés pour encapsuler et réutiliser la logique, comme la détection de défilement",
+        "4": "Intégrer et structurer des composants React pour une meilleure organisation et modularité du code",
+        "5": "Améliorer l'expérience utilisateur avec la gestion des états de chargement et l'utilisation de modules CSS pour le stylage"
       }
     },
     "project15": {
       "title": "Zest",
       "description": "Mini-projet créé lors d'un processus de recrutement d'une entreprise. Zest est un mini réseau social basé sur un style neumorphisme et responsive.",
       "infos": "Aucun back-end n'est utilisé pour ce projet.",
-      "tags": {
-        "1": "HTML",
-        "2": "CSS",
-        "3": "Style neumorphisme",
-        "4": "JavaScript",
-        "5": "Responsive"
+      "competences": {
+        "1": "Implémenter un design neumorphique en utilisant CSS pour créer une interface utilisateur moderne",
+        "2": "Développer une interface responsive pour différents appareils et tailles d'écran",
+        "3": "Structurer le contenu de l'application avec HTML et ajouter de l'interactivité avec JavaScript",
+        "4": "Utiliser Git et GitHub pour la gestion de version et la collaboration sur le projet"
       }
     },
     "project30": {

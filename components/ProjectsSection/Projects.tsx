@@ -2,6 +2,7 @@ import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import HeadingDivider from '../HeadingDivider';
 import LastProjects from './LastProjects';
+import { Button } from '../ui/button';
 
 const ProjectsSection = () => {
   const t = useTranslations('HomePage');
@@ -13,11 +14,10 @@ const ProjectsSection = () => {
         <Link
           href={{ pathname: '/projets' }}
           aria-label="Aller à la page des projets"
-          className="bg-light-bg-btn hover:bg-light-bg-btn-hover dark:bg-dark-bg-btn dark:hover:bg-dark-bg-btn-hover rounded-lg border border-black px-7 py-3 dark:border-white"
         >
-          <button aria-label="Voir plus de projets">
+          <Button variant="primary" aria-label="Voir plus de projets">
             {t('ProjectSection.more')}
-          </button>
+          </Button>
         </Link>
       </div>
     </section>
