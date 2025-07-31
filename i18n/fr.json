@@ -103,13 +103,19 @@
       "css": "CSS",
       "sass": "Sass",
       "js": "JavaScript",
+      "typescript": "TypeScript",
+      "jquery": "jQuery",
       "react": "React",
       "react-router": "React Router",
       "redux": "Redux",
       "redux-persist": "Redux Persist",
+      "nextjs": "Next.js",
+      "nextjs-themes": "Next-themes",
+      "nextjs-intl": "Next-intl",
       "hooks": "Hooks",
       "bootstrap": "Bootstrap",
       "styled-components": "Styled-components",
+      "tailwind": "Tailwind CSS",
       "neumorphism": "Style neumorphisme",
       "react-responsive-carousel": "React-responsive-carousel",
       "emailjs": "Emailjs",
@@ -280,6 +286,17 @@
         "4": "Utiliser Git et GitHub pour la gestion de version et la collaboration sur le projet"
       }
     },
+    "project16": {
+      "title": "Agence Lorem",
+      "description": "Projet d'un template d'agence fictive. Peut-être utilisé pour la création d'un site vitrine responsive et moderne.",
+      "competences": {
+        "1": "Structurer et organiser le contenu web avec HTML",
+        "2": "Créer des designs responsifs et esthétiques avec Bootstrap",
+        "3": "Rendre les pages web dynamiques et interactives avec JavaScript et jQuery",
+        "4": "Intégrer et personnaliser des bibliothèques tierces comme Ekko Lightbox",
+        "5": "Résoudre des problèmes et optimiser les performances"
+      }
+    },
     "project30": {
       "title": "Mon Portfolio Actuel",
       "description": "Pour un meilleur référencement naturel, et une lecture plus facile des robots d'indexation, j'ai décidé de redévelopper mon portfolio avec Next.js. avec les conseils de mon évaluateur lors de mon dernier projet avec OpenClassrooms.",
@@ -288,14 +305,6 @@
         "1": "Concevoir un site avec Next.js",
         "2": "Apprendre à utiliser Tailwind CSS",
         "3": "Internationaliser mon portfolio en français, en anglais avec next-intl"
-      },
-      "tags": {
-        "1": "Nextjs",
-        "2": "TypeScript",
-        "3": "Tailwind CSS",
-        "4": "Next-themes",
-        "5": "Next-intl",
-        "6": "React-icons"
       }
     },
     "project31": {
@@ -303,8 +312,6 @@
       "description": "J'ai rejoint un projet communautaire open source pour continuer à développer mes compétences, apprendre à travailler en équipe, et découvrir de nouveaux langages. J'essaye de contribuer autant sur la partie front que la partie back du projet.",
       "tags": {
         "1": "Vue",
-        "2": "TypeScript",
-        "3": "Sass",
         "4": "i18n",
         "5": "Nodejs",
         "6": "Express",
