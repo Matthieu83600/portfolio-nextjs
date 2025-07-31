@@ -103,13 +103,19 @@
       "css": "CSS",
       "sass": "Sass",
       "js": "JavaScript",
+      "typescript": "TypeScript",
+      "jquery": "jQuery",
       "react": "React",
       "react-router": "React Router",
       "redux": "Redux",
       "redux-persist": "Redux Persist",
+      "nextjs": "Next.js",
+      "nextjs-themes": "Next-themes",
+      "nextjs-intl": "Next-intl",
       "hooks": "Hooks",
       "bootstrap": "Bootstrap",
       "styled-components": "Styled-components",
+      "tailwind": "Tailwind CSS",
       "neumorphism": "Neumorphism style",
       "react-responsive-carousel": "React-responsive-carousel",
       "emailjs": "Emailjs",
@@ -280,6 +286,17 @@
         "4": "Use Git and GitHub for version control and collaboration on the project"
       }
     },
+    "project16": {
+      "title": "Lorem Agency",
+      "description": "Project for a fictional agency template. Can be used for creating a responsive and modern showcase website.",
+      "competences": {
+        "1": "Structuring and organizing web content with HTML",
+        "2": "Creating responsive and aesthetic designs with Bootstrap",
+        "3": "Making web pages dynamic and interactive with JavaScript and jQuery",
+        "4": "Integrating and customizing third-party libraries like Ekko Lightbox",
+        "5": "Problem-solving and optimizing website performance"
+      }
+    },
     "project30": {
       "title": "My Current Portfolio",
       "description": "For better SEO and easier readability for indexing bots, I decided to redevelop my portfolio using Next.js, following advice from my evaluator during my last project with OpenClassrooms.",
@@ -288,14 +305,6 @@
         "1": "Design a site with Next.js",
         "2": "Learn to use Tailwind CSS",
         "3": "Internationale my portfolio in French and English with next-intl"
-      },
-      "tags": {
-        "1": "Nextjs",
-        "2": "TypeScript",
-        "3": "Tailwind CSS",
-        "4": "Next-themes",
-        "5": "Next-intl",
-        "6": "React-icons"
       }
     },
     "project31": {
@@ -303,8 +312,6 @@
       "description": "I joined a community open-source project to continue developing my skills, learn to work in a team, and discover new languages. I try to contribute to both the front-end and back-end parts of the project.",
       "tags": {
         "1": "Vue",
-        "2": "TypeScript",
-        "3": "Sass",
         "4": "i18n",
         "5": "Nodejs",
         "6": "Express",
