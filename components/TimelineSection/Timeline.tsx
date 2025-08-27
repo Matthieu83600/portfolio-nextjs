@@ -12,14 +12,14 @@ const TimeLine = () => {
     () => [
       {
         id: '1',
-        year: '2025',
-        text: t('TimelineSection.2024.text1'),
-        default: true, // Cet élément sera visible en premier
+        year: t('TimelineSection.2025.text1'),
+        text: t('TimelineSection.2025.text2'),
+        default: true,
       },
 
       {
         id: '2',
-        year: "2024 - Aujourd'hui",
+        year: t('TimelineSection.2024.text1'),
         text: t('TimelineSection.2024.text2'),
       },
       {

@@ -42,8 +42,12 @@
       "altPhoto": "My portrait"
     },
     "TimelineSection": {
+      "2025": {
+        "text1": "2025 - Currently",
+        "text2": "Department Manager at Bureau Vallée."
+      },
       "2024": {
-        "text1": "Actively seeking a junior position as a web integrator developer.",
+        "text1": "2024 - Currently",
         "text2": "Integration into the DinoRPG community project.",
         "text3": "Order preparer / delivery person at Floral Concept."
       },

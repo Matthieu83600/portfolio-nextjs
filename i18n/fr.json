@@ -42,8 +42,12 @@
       "altPhoto": "Mon portrait"
     },
     "TimelineSection": {
+      "2025": {
+        "text1": "2025 - Aujourd'hui",
+        "text2": "Gestionnaire de rayons chez Bureau Vallée."
+      },
       "2024": {
-        "text1": "En recherche active pour un poste junior en tant que développeur intégrateur web.",
+        "text1": "2024 - Aujourd'hui",
         "text2": "Intégration du projet communautaire DinoRPG.",
         "text3": "Préparateur / Livreur de commandes chez Floral Concept."
       },
