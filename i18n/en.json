@@ -116,15 +116,22 @@
       "bootstrap": "Bootstrap",
       "styled-components": "Styled-components",
       "tailwind": "Tailwind CSS",
+      "shadcnui": "Shadcn UI",
       "neumorphism": "Neumorphism style",
       "react-responsive-carousel": "React-responsive-carousel",
       "emailjs": "Emailjs",
       "react-bootstrap-icons": "React-bootstrap-icons",
+      "vue": "Vue.js",
+      "i18n": "i18n",
       "prettier": "Prettier",
       "axios": "Axios",
       "tmdb-api": "TMDB-API",
       "api": "API",
       "json": "JSON",
+      "node": "Node.js",
+      "express": "Express",
+      "prisma": "Prisma",
+      "postgresql": "PostgreSQL",
       "mobileFirst-workflow": "Mobile-fisrt workflow",
       "responsive": "Responsive",
       "seo": "SEO",
@@ -135,6 +142,7 @@
       "chrome": "Chrome DevTools",
       "figma": "Figma Design",
       "git": "Git & GitHub",
+      "gitlab": "GitLab",
       "postman": "Postman",
       "swagger": "Swagger",
       "project": "Project management",
@@ -309,16 +317,7 @@
     },
     "project31": {
       "title": "Eternal Twin - DinoRPG",
-      "description": "I joined a community open-source project to continue developing my skills, learn to work in a team, and discover new languages. I try to contribute to both the front-end and back-end parts of the project.",
-      "tags": {
-        "1": "Vue",
-        "4": "i18n",
-        "5": "Nodejs",
-        "6": "Express",
-        "7": "API",
-        "8": "Prisma",
-        "9": "Postgresql"
-      }
+      "description": "I joined a community open-source project to continue developing my skills, learn to work in a team, and discover new languages. I try to contribute to both the front-end and back-end parts of the project."
     }
   },
   "LegalNoticePage": {
