@@ -3,11 +3,11 @@ import { TECHNOLOGIES } from '../../constants/technologies';
 import HeadingDivider from '../HeadingDivider';
 
 const TechnologiesSection = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('HomePage.SkillsSection');
   return (
     <section id="tech" className="section my-8">
-      <HeadingDivider title={t('SkillsSection.title')} />
-      <p className="my-8 text-2xl">{t('SkillsSection.text')}</p>
+      <HeadingDivider title={t('title')} />
+      <p className="my-8 text-2xl">{t('text')}</p>
       {!!TECHNOLOGIES.length && (
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4">
           {TECHNOLOGIES.map((tech) => {

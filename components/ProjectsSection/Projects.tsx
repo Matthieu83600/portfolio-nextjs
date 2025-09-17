@@ -5,10 +5,10 @@ import LastProjects from './LastProjects';
 import { Button } from '../ui/button';
 
 const ProjectsSection = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('HomePage.ProjectSection');
   return (
     <section id="projects" className="section my-12">
-      <HeadingDivider title={t('ProjectSection.title')} />
+      <HeadingDivider title={t('title')} />
       <div className="flex flex-col items-center gap-8 md:gap-14">
         <LastProjects />
         <Link
@@ -16,7 +16,7 @@ const ProjectsSection = () => {
           aria-label="Aller à la page des projets"
         >
           <Button variant="primary" aria-label="Voir plus de projets">
-            {t('ProjectSection.more')}
+            {t('more')}
           </Button>
         </Link>
       </div>

@@ -5,7 +5,7 @@ import { useScrollTo } from '../../hooks/useScrollTo';
 import { Button } from '../ui/button';
 
 const IntroSection = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('HomePage.IntroSection');
   const { scrollToEl } = useScrollTo();
   const onClick = (e: never) => scrollToEl(e);
 
@@ -14,10 +14,10 @@ const IntroSection = () => {
       <div className="flex flex-col items-center gap-4 py-5">
         <div className="py-5 md:py-10">
           <h2 className="text-center text-3xl font-bold italic md:text-5xl xl:text-6xl">
-            {t('IntroSection.title')}
+            {t('title')}
           </h2>
           <p className="text-light-text-secondary dark:text-dark-text-secondary mt-3 mb-10 text-xl">
-            {t('IntroSection.description')}
+            {t('description')}
           </p>
           <div className="flex flex-col gap-10 sm:flex-row">
             <Button variant="primary" size="perso">
@@ -26,7 +26,7 @@ const IntroSection = () => {
                 onClick={onClick}
                 aria-label="Derniers projets"
               >
-                {t('IntroSection.linkProjects')}
+                {t('linkProjects')}
               </Link>
             </Button>
             <Button variant="primary" size="perso">
@@ -36,7 +36,7 @@ const IntroSection = () => {
                 rel="noopener noreferrer"
                 aria-label="Mon CV"
               >
-                {t('IntroSection.linkCV')}
+                {t('linkCV')}
               </Link>
             </Button>
           </div>

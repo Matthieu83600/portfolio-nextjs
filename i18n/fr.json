@@ -83,6 +83,29 @@
     "ProjectSection": {
       "title": "Derniers Projets",
       "more": "Plus de projets"
+    },
+    "ContactSection": {
+      "title": "Contact",
+      "description": "Si vous avez des questions ou des préoccupations, n'hésitez pas à me contacter. Je vous répondrai dans les plus brefs délais.",
+      "contactForm": {
+        "name": "Nom :",
+        "email": "Email :",
+        "message": "Message :",
+        "send": "Envoyer",
+        "sending": "Envoi...",
+        "success": "Message envoyé avec succès !",
+        "error": "Une erreur est survenue. Veuillez réessayer.",
+        "unknownError": "Une erreur inconnue est survenue. Veuillez réessayer.",
+        "validation": {
+          "nameRequired": "Le nom doit contenir au moins 2 caractères.",
+          "emailInvalid": "L'email n'est pas valide.",
+          "messageRequired": "Le message doit contenir au moins 5 caractères."
+        },
+        "alert": {
+          "successTitle": "Succès",
+          "errorTitle": "Erreur"
+        }
+      }
     }
   },
   "ProjectsCard": {
