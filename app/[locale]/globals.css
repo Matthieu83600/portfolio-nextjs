@@ -7,7 +7,7 @@
   --background-image-light-custom-gradient: linear-gradient(
     90deg,
     #ece9fa,
-    #97f0ff
+    #d7d3e3
   );
   --background-image-dark-custom-gradient: linear-gradient(
     90deg,
@@ -18,7 +18,7 @@
     to bottom,
     #fff,
     #ece9fa,
-    #97f0ff
+    #d7d3e3
   );
   --background-image-dark-bg-custom-gradient: linear-gradient(
     to top,
@@ -33,7 +33,7 @@
   --color-light-text-secondary: #121778;
   --color-dark-text-primary: #efecfa;
   --color-dark-text-secondary: #c9c2f8;
-  --color-light-bg-btn: #8febfc;
+  --color-light-bg-btn: #d7d3e3;
   --color-light-bg-btn-hover: #97f0ff;
   --color-dark-bg-btn: #473fcb;
   --color-dark-bg-btn-hover: #3b35a0;

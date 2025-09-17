@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const AboutSection = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('HomePage.AboutSection');
   return (
     <section
       id="about"
@@ -11,15 +11,15 @@ const AboutSection = () => {
     >
       <div className="col-span-2 col-start-1! row-span-6 row-start-1 md:col-span-9">
         <h2 className="after:bg-inherited mb-9 hidden items-center gap-4 bg-linear-to-r from-gray-100 to-gray-50 bg-clip-text text-2xl font-extrabold text-slate-950 uppercase after:h-[1px] md:block md:text-4xl dark:text-slate-50">
-          {t('AboutSection.title')}
+          {t('title')}
         </h2>
         <div className="bg-light-bg-card/50 dark:bg-dark-bg-card/50 relative z-20 mt-9 hidden rounded-2xl border border-slate-100 p-8 drop-shadow-lg backdrop-blur-lg md:block">
-          <h3 className="mb-9 font-semibold">{t('AboutSection.subTitle')}</h3>
-          <p>{t('AboutSection.description')}</p>
-          <p className="my-3.5">{t('AboutSection.description2')}</p>
-          <p>{t('AboutSection.description3')}</p>
-          <p className="my-3.5">{t('AboutSection.description4')}</p>
-          <p>{t('AboutSection.description5')}</p>
+          <h3 className="mb-9 font-semibold">{t('subTitle')}</h3>
+          <p>{t('description')}</p>
+          <p className="my-3.5">{t('description2')}</p>
+          <p>{t('description3')}</p>
+          <p className="my-3.5">{t('description4')}</p>
+          <p>{t('description5')}</p>
         </div>
       </div>
       <div className="col-span-2 col-start-1 row-span-5 row-start-1 md:col-span-4 md:col-start-9">
@@ -30,7 +30,7 @@ const AboutSection = () => {
             width={320}
             height={320}
             style={{ width: '90%', height: 'auto' }}
-            alt={t('AboutSection.altPhoto')}
+            alt={t('altPhoto')}
             className="z-10 rounded-2xl"
           />
         </div>

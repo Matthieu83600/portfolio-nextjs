@@ -1,11 +1,5 @@
 import { SocialMediaOption } from '@/types/socialMediaOption.types';
-import {
-  Github,
-  Gitlab,
-  Linkedin,
-  MailQuestionIcon,
-  Twitter,
-} from 'lucide-react';
+import { Github, Gitlab, Linkedin, Twitter } from 'lucide-react';
 
 export const SOCIAL_MEDIA: SocialMediaOption[] = [
   {
@@ -31,11 +25,5 @@ export const SOCIAL_MEDIA: SocialMediaOption[] = [
     icon: Github,
     title: 'github',
     url: 'https://github.com/Matthieu83600',
-  },
-  {
-    id: 'mail',
-    icon: MailQuestionIcon,
-    title: 'mail',
-    url: 'mailto:matthieu83600-pro@outlook.fr',
   },
 ];

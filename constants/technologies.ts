@@ -26,7 +26,7 @@ import {
 
 export const TECHNOLOGIES: TechnologyList = [
   {
-    category: 'SkillsSection.category.front',
+    category: 'category.front',
     items: [
       { name: 'HTML', icon: AiFillHtml5 },
       { name: 'CSS', icon: DiCss3 },
@@ -43,21 +43,21 @@ export const TECHNOLOGIES: TechnologyList = [
     ],
   },
   {
-    category: 'SkillsSection.category.back',
+    category: 'category.back',
     items: [
       { name: 'Node', icon: FaNode },
       { name: 'Express', icon: SiExpress },
     ],
   },
   {
-    category: 'SkillsSection.category.databases',
+    category: 'category.databases',
     items: [
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'Postgresql', icon: BiLogoPostgresql },
     ],
   },
   {
-    category: 'SkillsSection.category.version',
+    category: 'category.version',
     items: [
       { name: 'Git', icon: FaGitAlt },
       { name: 'Github', icon: AiFillGithub },
@@ -65,15 +65,15 @@ export const TECHNOLOGIES: TechnologyList = [
     ],
   },
   {
-    category: 'SkillsSection.category.tools',
+    category: 'category.tools',
     items: [{ name: 'Figma', icon: FaFigma }],
   },
   {
-    category: 'SkillsSection.category.ide',
+    category: 'category.ide',
     items: [{ name: 'VsCode', icon: TbBrandVscode }],
   },
   {
-    category: 'SkillsSection.category.other',
+    category: 'category.other',
     items: [
       { name: 'Trello', icon: FaTrello },
       { name: 'Slack', icon: FaSlack },
