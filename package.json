@@ -22,11 +22,6 @@
     },
     "npm": {
       "publish": false
-    },
-    "hooks": {
-      "before:init": [
-        "pnpm lint"
-      ]
     }
   },
   "dependencies": {
