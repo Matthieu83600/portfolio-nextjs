@@ -1,4 +1,4 @@
-import { Link } from '@/i18n/routing';
+import { Link } from '../../i18n/navigation';
 import { useTranslations } from 'next-intl';
 import SocialMedia from '../HeaderSection/SocialMedia';
 import ScrollTop from './ScrollTop';
