@@ -11,6 +11,7 @@ import {
   FaSass,
   FaSlack,
   FaTrello,
+  FaGitkraken
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiExpress, SiMongodb, SiPostman, SiSwagger } from 'react-icons/si';
@@ -62,6 +63,7 @@ export const TECHNOLOGIES: TechnologyList = [
       { name: 'Git', icon: FaGitAlt },
       { name: 'Github', icon: AiFillGithub },
       { name: 'Gitlab', icon: TbBrandGitlab },
+      { name: 'GitKraken', icon: FaGitkraken }
     ],
   },
   {
