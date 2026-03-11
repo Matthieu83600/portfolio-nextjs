@@ -1,5 +1,10 @@
 import { SocialMediaOption } from '@/types/socialMediaOption.types';
-import { TbBrandGithub, TbBrandGitlab, TbBrandLinkedin, TbBrandTwitter } from 'react-icons/tb';
+import {
+  TbBrandGithub,
+  TbBrandGitlab,
+  TbBrandLinkedin,
+  TbBrandTwitter,
+} from 'react-icons/tb';
 
 export const SOCIAL_MEDIA: SocialMediaOption[] = [
   {
