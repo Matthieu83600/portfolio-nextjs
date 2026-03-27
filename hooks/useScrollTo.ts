@@ -18,7 +18,6 @@ export function useScrollTo() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-   
   const scrollToEl = (e: any) => {
     e.preventDefault();
     const hash = e.target.hash;
