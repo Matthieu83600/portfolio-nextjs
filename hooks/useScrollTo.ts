@@ -18,7 +18,7 @@ export function useScrollTo() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+   
   const scrollToEl = (e: any) => {
     e.preventDefault();
     const hash = e.target.hash;
