@@ -70,8 +70,8 @@ importers:
         specifier: ^5.6.0
         version: 5.6.0(react@19.2.4)
       resend:
-        specifier: ^6.12.0
-        version: 6.12.0(@react-email/render@2.0.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
+        specifier: ^6.12.2
+        version: 6.12.2(@react-email/render@2.0.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
       tailwind-merge:
         specifier: ^3.5.0
         version: 3.5.0
@@ -3327,8 +3327,8 @@ packages:
     engines: {node: ^20.19.0 || ^22.13.0 || >=24.0.0}
     hasBin: true
 
-  resend@6.12.0:
-    resolution: {integrity: sha512-CaxEvX1z+/MGbgnhsM/bvmkbnZd1v1sEXELAjBNSDBQNMaB7MgqOyrBgI27CYikEgdaDnBrXghAXYWTBs/h5Bw==}
+  resend@6.12.2:
+    resolution: {integrity: sha512-xwgmU4b0OqoabJsIoK/x0Whk0Fcs3bpbK4i/DEWPiE5hYJHyHl0TbB6QbI3gIr+bLdLUJ1GYm/fe41aVFuHXgw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@react-email/render': '*'
@@ -6837,7 +6837,7 @@ snapshots:
       - magicast
       - supports-color
 
-  resend@6.12.0(@react-email/render@2.0.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)):
+  resend@6.12.2(@react-email/render@2.0.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)):
     dependencies:
       postal-mime: 2.7.4
       svix: 1.90.0
