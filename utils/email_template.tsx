@@ -1,11 +1,11 @@
 import {
   Html,
+  Heading,
   Body,
   Container,
-  Heading,
   Text,
   Section,
-} from '@react-email/components';
+} from "react-email";
 
 type ContactEmailProps = {
   name: string;
