@@ -11,10 +11,10 @@ import {
   FaSass,
   FaSlack,
   FaTrello,
-  FaGitkraken,
+  FaGitkraken
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiExpress, SiMongodb, SiPostman, SiSwagger } from 'react-icons/si';
+import { SiExpress, SiFastify, SiPrisma, SiMongodb, SiPostman, SiSwagger, SiZod } from 'react-icons/si';
 import {
   TbBrandGitlab,
   TbBrandNextjs,
@@ -48,6 +48,9 @@ export const TECHNOLOGIES: TechnologyList = [
     items: [
       { name: 'Node', icon: FaNode },
       { name: 'Express', icon: SiExpress },
+      { name: 'Fastify', icon: SiFastify },
+      { name: 'Prisma', icon: SiPrisma },
+      { name: 'Zod', icon: SiZod }
     ],
   },
   {
